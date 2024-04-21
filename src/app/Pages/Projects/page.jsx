@@ -30,7 +30,7 @@ function Projectpage() {
           <div class="relative lg:w-1/2">
             <img
               class="object-cover h-[12rem] w-full lg:h-[160%]"
-              src="./images/project1.jpg"
+              src="/images/project1.jpg"
               alt=""
             />
             <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black lg:h-[160%]"></div>
@@ -41,7 +41,7 @@ function Projectpage() {
           <div class="relative lg:w-1/2">
             <img
               class="object-cover h-[12rem] w-full lg:h-full "
-              src="./images/project1.jpg"
+              src="/images/project1.jpg"
               alt=""
             />
             <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black "></div>
@@ -73,7 +73,7 @@ function Projectpage() {
           <div class="relative lg:w-1/2">
             <img
               class="object-cover h-[12rem] w-full lg:h-[160%]"
-              src="./images/project1.jpg"
+              src="/images/project1.jpg"
               alt=""
             />
             <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black lg:h-[160%]"></div>
@@ -95,7 +95,7 @@ function Projectpage() {
           <div class="relative lg:w-1/2">
             <img
               class="object-cover h-[12rem] w-full lg:h-[160%]"
-              src="./images/project1.jpg"
+              src="/images/project1.jpg"
               alt=""
             />
             <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black lg:h-[160%]"></div>
