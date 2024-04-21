@@ -1,4 +1,4 @@
-import Services from "./services/page";
+import Services from "./Pages/services/page";
 
 export default function Home() {
   return (
