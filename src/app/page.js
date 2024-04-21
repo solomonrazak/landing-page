@@ -1,10 +1,9 @@
-import Services from "./pages/services/page";
-
+import Projectpage from "./pages/Projects/page";
 
 export default function Home() {
   return (
     <main className="">
-      <Services />
+      <Projectpage />
     </main>
   );
 }
