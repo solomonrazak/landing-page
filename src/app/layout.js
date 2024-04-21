@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -18,7 +19,7 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
       </head>
       <body className={`${inter.className} bg-black min-h-screen flex justify-center items-center relative overflow-hidden`}>
-        
+
         {children}
       </body>
     </html>
