@@ -3,7 +3,6 @@ import { FaXTwitter, FaGithub, FaLinkedinIn, FaYoutube } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-
     <div className="bg-black w-screen bottom-0">
       <div className="flex flex-col md:flex-row text-white justify-between md:px-[5%] py-[4%] pr-20 pl-10 pt-10">
         <h1 className="font-medium flex flex-col text-[30px] md:text-[3em] mb-10 md:mb-0">
@@ -56,6 +55,5 @@ const Footer = () => {
     </div>
   );
 };
-
 
 export default Footer;
