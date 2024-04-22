@@ -1,5 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/footer/Footer";
+
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -17,9 +19,10 @@ export default function RootLayout({ children }) {
         <meta name="description" content={metadata.description} />
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
       </head>
-      <body className={`${inter.className} bg-black min-h-screen flex justify-center items-center relative overflow-hidden`}>
-        
+      <body className={`${inter.className}`}>
+
         {children}
+        <Footer />
       </body>
     </html>
   );
