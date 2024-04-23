@@ -50,11 +50,12 @@ const Header = () => {
           <Image
             src={image}
             alt="unsplash-image"
-            objectFit="cover"
+           
             quality={100}
             width={1000}
             height={500}
-            className="rounded-md"
+            className="rounded-md object-cover"
+            priority={true}
           />
         )}
       </div>
