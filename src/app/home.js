@@ -1,4 +1,4 @@
-import Projectpage from "./Pages/Projects/page";
+import Projectpage from "./Pages/Projects/projectspage";
 
 export default function Home() {
   return (

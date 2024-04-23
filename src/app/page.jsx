@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main className="">
       <Header />
-      <Link href="./Pages/Projects">
+      <Link href=".\Pages\Projects\projectspage.jsx">
         <p className="m-4 p-4 rounded-lg bg-blue-500 w-40 text-center text-white">
           Projects
         </p>
