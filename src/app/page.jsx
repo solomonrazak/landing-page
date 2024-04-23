@@ -1,4 +1,4 @@
-import Projectpage from "./Pages/Projects/projectpage.jsx";
+import Projectpage from "./Pages/Project/page.jsx";
 import Services from "./Pages/services/servicespage.jsx";
 export default function Home() {
   return (
