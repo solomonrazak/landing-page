@@ -1,11 +1,10 @@
-import Link from "next/link";
-import Projectpage from "./Pages/projects/page";
-import Services from "./Pages/services/page";
+import Projectpage from "./Pages/projects/page.jsx";
+import Services from "./Pages/services/page.jsx";
 export default function Home() {
   return (
     <main className="">
       <Projectpage />
-      <Services/>
+      <Services />
     </main>
   );
 }
