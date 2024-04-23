@@ -1,4 +1,3 @@
-
 import { FaXTwitter, FaGithub, FaLinkedinIn, FaYoutube } from "react-icons/fa6";
 
 const Footer = () => {
@@ -57,3 +56,7 @@ const Footer = () => {
 };
 
 export default Footer;
+
+
+
+
