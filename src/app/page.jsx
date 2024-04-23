@@ -1,14 +1,10 @@
-import Link from "next/link";
-import Header from "@/components/header/Header";
+import Projectpage from "./Pages/Project/page.jsx";
+import Services from "./Pages/services/servicespage.jsx";
 export default function Home() {
   return (
     <main className="">
-      <Header />
-      <Link href=".\Pages\Project\">
-        <p className="m-4 p-4 rounded-lg bg-blue-500 w-40 text-center text-white">
-          Click me!
-        </p>
-      </Link>
+      <Projectpage />
+      <Services />
     </main>
   );
 }
