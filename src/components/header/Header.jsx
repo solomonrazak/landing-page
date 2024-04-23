@@ -13,7 +13,7 @@ const Header = () => {
         const response = await axios.get(
           `https://api.unsplash.com/photos/?client_id=${key}`
         );
-        setImage(response.data[0].urls.regular);
+        setImage(response.data[1].urls.regular);
       } catch (error) {
         console.log("Error in fetching image from unsplash", error);
       }
@@ -22,15 +22,15 @@ const Header = () => {
   });
 
   return (
-    <div className="bg-violet-200 py-[7%] w-screen">
-      <div className="flex flex-col justify-center items-center text-white">
-        <h1 className="text-[37px] md:text-[5rem] font-medium">
+    <div className="bg-black py-[7%] w-screen pt-20 ">
+      <div className="flex flex-col justify-center items-center text-white ">
+        <h1 className="text-[37px] md:text-[5rem] font-medium text-center">
           The Fastest Software
         </h1>
-        <h1 className="text-[37px] md:text-[5rem] font-medium mt-[-5px] md:mt-[-30px]">
+        <h1 className="text-[37px] md:text-[5rem] font-medium mt-[-5px] md:mt-[-30px] text-center">
           Service Ever Made
         </h1>
-        <p className="text-[19px] font-medium md:text-[23px] mt-5">
+        <p className="text-[19px] font-medium md:text-[23px] mt-5 text-center">
           AI Powered Softwares for all companies
         </p>
         <p className="text-[19px] font-medium md:text-[23px] mt-2">
@@ -48,12 +48,11 @@ const Header = () => {
       <div className="flex justify-center mt-[30px] p-8 overflow-x-hidden">
         {image && (
           <Image
-            src={image}
+            src="/images/project1.jpg"
             alt="unsplash-image"
-           
             quality={100}
             width={1000}
-            height={500}
+            height={100}
             className="rounded-md object-cover"
             priority={true}
           />
