@@ -26,14 +26,12 @@ const uiuxIcon = (
 
 const Services = () => {
   return (
-    <div className="bg-black min-h-screen w-full flex flex-col justify-center items-center relative overflow-hidden">
+    <div className="bg-black min-h-screen w-full flex flex-col justify-center items-center relative overflow-hidden" style={{background: 'radial-gradient(34.48% 34.48% at 50% 50%, rgba(250, 117, 248, 0.26) 0%, rgba(250, 117, 248, 0) 100%)'}}>
       <Head>
         <title>Our Services</title>
       </Head>
 
-      {/* Purple glow effect */}
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full h-96 w-96 opacity-50 z-0"
-           style={{ background: 'radial-gradient(circle, rgba(128,0,128,0.8), rgba(0,0,0,0.8))' }}>
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full h-96 w-96 opacity-50 z-0">
       </div>
 
       {/* Heading */}
