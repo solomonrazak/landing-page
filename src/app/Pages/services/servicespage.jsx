@@ -26,27 +26,25 @@ const uiuxIcon = (
 
 const Services = () => {
   return (
-    <div className="bg-black min-h-screen w-screen flex flex-col mt-10 justify-center items-center overflow-hidden overflow-x-hidden z-0">
+    <div className="bg-black w-screen flex flex-col justify-center items-center relative overflow-hidden mt-[6rem] md:mt-[7rem]" style={{background: 'radial-gradient(34.48% 34.48% at 50% 50%, rgba(250, 117, 248, 0.26) 0%, rgba(250, 117, 248, 0) 100%)'}}>
       <Head>
         <title>Our Services</title>
       </Head>
 
-      {/* Purple glow effect */}
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full h-96 w-96 opacity-50 z-0"
-           style={{ background: 'radial-gradient(circle, rgba(128,0,128,0.8), rgba(0,0,0,0.8))' }}>
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full h-96 w-96 opacity-50 z-0">
       </div>
 
       {/* Heading */}
-      <h1 className="text-white text-4xl font-bold tracking-widest">Our Services</h1>
+      <h1 className="text-white text-[28px] text-2xl md:text-4xl font-bold tracking-widest z-0">Our Services</h1>
 
       {/* Services Content */}
-      <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-8 relative px-[10%] mt-12">
+      <div className="w-full  md:w-[90%] grid grid-cols-1 md:grid-cols-2 gap-[3rem] relative px-[10%] mt-12 mb-[2rem] md:mb-[5rem]">
         {/* Service Column 1 */}
-        <div className=''>
-          <h2 className="text-white text-2xl font-semibold mb-4">
+        <div className='flex flex-col items-center md:grid'>
+          <h2 className="text-white text-2xl font-medium mb-4">
             {webIcon}Web Development
           </h2>
-          <ul className="list-disc list-inside text-white leading-10">
+          <ul className="text-center md:text-start text-white leading-10">
             <li>Custom Web Applications</li>
             <li>E-commerce Websites</li>
             <li>Responsive Web Design</li>
@@ -54,11 +52,11 @@ const Services = () => {
         </div>
 
         {/* Service Column 2 */}
-        <div>
-          <h2 className="text-white text-2xl mb-4">
+        <div className='flex flex-col items-center md:grid'> 
+          <h2 className="text-white text-2xl mb-4 md:text-end">
             {mobileIcon}Mobile App Development
           </h2>
-          <ul className="list-disc list-inside text-white leading-10">
+          <ul className="text-center md:text-end text-white leading-10">
             <li>iOS App Development</li>
             <li>Android App Development</li>
             <li>Cross-Platform App Development</li>
@@ -66,11 +64,11 @@ const Services = () => {
         </div>
 
         {/* Service Column 3 */}
-        <div>
+        <div className='flex flex-col items-center md:grid'>
           <h2 className="text-white text-2xl mb-4">
             {uiuxIcon}UI/UX Design
           </h2>
-          <ul className="list-disc list-inside text-white leading-10">
+          <ul className="text-center md:text-start text-white leading-10">
             <li>Wireframing & Prototyping</li>
             <li>User Experience Design</li>
             <li>Visual Design</li>
@@ -78,11 +76,11 @@ const Services = () => {
         </div>
 
         {/* Service Column 4 */}
-        <div>
-          <h2 className="text-white text-2xl mb-4">
+        <div className='flex flex-col items-center md:grid'>
+          <h2 className="text-white text-2xl mb-4 md:text-end">
             {cloudIcon}Cloud Solutions
           </h2>
-          <ul className="list-disc list-inside text-white leading-10">
+          <ul className="text-center md:text-end text-white leading-10">
             <li>Cloud Infrastructure Setup</li>
             <li>Cloud Migration & Optimization</li>
             <li>Managed Cloud Services</li>

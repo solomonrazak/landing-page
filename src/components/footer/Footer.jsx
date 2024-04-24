@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row text-white justify-between md:px-[5%] py-[4%] pr-20 pl-10 pt-10">
         <h1 className="font-medium flex flex-col text-[30px] md:text-[3em] mb-10 md:mb-0">
           <span>The Fastest</span>
-          <span>Email Experience</span>
+          <span>Software Experience</span>
           <span>Ever made</span>
         </h1>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-11">
