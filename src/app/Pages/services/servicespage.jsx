@@ -26,7 +26,7 @@ const uiuxIcon = (
 
 const Services = () => {
   return (
-    <div className="bg-black min-h-screen w-full flex flex-col justify-center items-center relative overflow-hidden">
+    <div className="bg-black min-h-screen w-screen flex flex-col mt-10 justify-center items-center overflow-hidden overflow-x-hidden z-0">
       <Head>
         <title>Our Services</title>
       </Head>
@@ -37,16 +37,16 @@ const Services = () => {
       </div>
 
       {/* Heading */}
-      <h1 className="text-white text-5xl font-bold mb-12 z-10 relative">Our Services</h1>
+      <h1 className="text-white text-4xl font-bold tracking-widest">Our Services</h1>
 
       {/* Services Content */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 z-10 relative">
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-8 relative px-[10%] mt-12">
         {/* Service Column 1 */}
-        <div>
-          <h2 className="text-white text-3xl font-semibold mb-4">
+        <div className=''>
+          <h2 className="text-white text-2xl font-semibold mb-4">
             {webIcon}Web Development
           </h2>
-          <ul className="list-disc list-inside text-white">
+          <ul className="list-disc list-inside text-white leading-10">
             <li>Custom Web Applications</li>
             <li>E-commerce Websites</li>
             <li>Responsive Web Design</li>
@@ -55,10 +55,10 @@ const Services = () => {
 
         {/* Service Column 2 */}
         <div>
-          <h2 className="text-white text-3xl mb-4">
+          <h2 className="text-white text-2xl mb-4">
             {mobileIcon}Mobile App Development
           </h2>
-          <ul className="list-disc list-inside text-white">
+          <ul className="list-disc list-inside text-white leading-10">
             <li>iOS App Development</li>
             <li>Android App Development</li>
             <li>Cross-Platform App Development</li>
@@ -67,10 +67,10 @@ const Services = () => {
 
         {/* Service Column 3 */}
         <div>
-          <h2 className="text-white text-3xl mb-4">
+          <h2 className="text-white text-2xl mb-4">
             {uiuxIcon}UI/UX Design
           </h2>
-          <ul className="list-disc list-inside text-white">
+          <ul className="list-disc list-inside text-white leading-10">
             <li>Wireframing & Prototyping</li>
             <li>User Experience Design</li>
             <li>Visual Design</li>
@@ -79,10 +79,10 @@ const Services = () => {
 
         {/* Service Column 4 */}
         <div>
-          <h2 className="text-white text-3xl mb-4">
+          <h2 className="text-white text-2xl mb-4">
             {cloudIcon}Cloud Solutions
           </h2>
-          <ul className="list-disc list-inside text-white">
+          <ul className="list-disc list-inside text-white leading-10">
             <li>Cloud Infrastructure Setup</li>
             <li>Cloud Migration & Optimization</li>
             <li>Managed Cloud Services</li>
