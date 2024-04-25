@@ -2,12 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-
 function Testimonial() {
-  const [windowSize, setWindowSize] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight,
-  });
   const [testimonialIndex, setTestimonialIndex] = useState(0);
   const [activeButton, setActiveButton] = useState(0); // Track active button index
 
@@ -68,28 +63,18 @@ function Testimonial() {
               index === testimonialIndex && (
                 <motion.p
                   key={index}
-                  className="text-2xl lg:text-5xl font-bold testimonial-quote h-80"
+                  className="text-2xl lg:text-5xl font-bold testimonial-quote h-80 absolute left-10 mr-10 lg:left-40 lg:mr-36"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.36 }}
-                  style={{
-                    position: "absolute",
-                    left: 40,
-                    right: 50,
-                    ...(windowSize.width <= 1536 &&
-                      windowSize.width >= 1024 && {
-                        left: "160px",
-                        right: "140px",
-                      }),
-                  }}
                 >
                   {testimonial.quote}
                 </motion.p>
               )
           )}
         </AnimatePresence>
-        <div className="mt-60 lg:mt-80  flex flex-col md:flex-row justify-between">
+        <div className="mt-72 md:mt-60 lg:mt-80  flex flex-col md:flex-row justify-between">
           <div>
             <div className="flex flex-row gap-6 md:items-center md:border-r-2 md:pr-10">
               <div className="">
