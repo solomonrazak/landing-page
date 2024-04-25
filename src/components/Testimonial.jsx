@@ -2,7 +2,12 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
+
 function Testimonial() {
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
   const [testimonialIndex, setTestimonialIndex] = useState(0);
   const [activeButton, setActiveButton] = useState(0); // Track active button index
 
@@ -72,8 +77,8 @@ function Testimonial() {
                     position: "absolute",
                     left: 40,
                     right: 50,
-                    ...(window.innerWidth <= 1536 &&
-                      window.innerWidth >= 1024 && {
+                    ...(windowSize.width <= 1536 &&
+                      windowSize.width >= 1024 && {
                         left: "160px",
                         right: "140px",
                       }),
