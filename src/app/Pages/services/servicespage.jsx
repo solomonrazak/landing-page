@@ -35,10 +35,10 @@ const Services = () => {
       </div>
 
       {/* Heading */}
-      <h1 className="text-white text-[28px] text-2xl md:text-4xl font-bold tracking-widest z-0">Our Services</h1>
+      <h1 className="text-white text-[28px] text-2xl md:text-4xl font-bold tracking-widest z-0 md:ml-[-10px]"><span className="text-violet-300 mr-3">Our</span>Services</h1>
 
       {/* Services Content */}
-      <div className="w-full  md:w-[90%] grid grid-cols-1 md:grid-cols-2 gap-[3rem] relative px-[10%] mt-12 mb-[2rem] md:mb-[5rem]">
+      <div className="w-full mx-auto  md:w-[76%] grid grid-cols-1 md:grid-cols-2 gap-[3rem] relative px-[10%] mt-12 mb-[2rem] md:mb-[5rem]">
         {/* Service Column 1 */}
         <div className='flex flex-col items-center md:grid'>
           <h2 className="text-white text-2xl font-medium mb-4">
@@ -53,10 +53,10 @@ const Services = () => {
 
         {/* Service Column 2 */}
         <div className='flex flex-col items-center md:grid'> 
-          <h2 className="text-white text-2xl mb-4 md:text-end">
+          <h2 className="text-white text-2xl mb-4 md:text-start">
             {mobileIcon}Mobile App Development
           </h2>
-          <ul className="text-center md:text-end text-white leading-10">
+          <ul className="text-center md:text-start text-white leading-10">
             <li>iOS App Development</li>
             <li>Android App Development</li>
             <li>Cross-Platform App Development</li>
@@ -77,10 +77,10 @@ const Services = () => {
 
         {/* Service Column 4 */}
         <div className='flex flex-col items-center md:grid'>
-          <h2 className="text-white text-2xl mb-4 md:text-end">
+          <h2 className="text-white text-2xl mb-4 md:text-start">
             {cloudIcon}Cloud Solutions
           </h2>
-          <ul className="text-center md:text-end text-white leading-10">
+          <ul className="text-center md:text-start text-white leading-10">
             <li>Cloud Infrastructure Setup</li>
             <li>Cloud Migration & Optimization</li>
             <li>Managed Cloud Services</li>
