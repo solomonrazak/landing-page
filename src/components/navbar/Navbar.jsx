@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="w-screen px-[5%] flex justify-between bg-black text-white opacity-90 fixed top-0 py-5 items-center overflow-x-hidden">
+    <div className="w-screen px-[5%] flex justify-between bg-black text-white opacity-90 fixed top-0 py-5 items-center overflow-x-hidden z-40">
       <div className="flex gap-9 items-center">
         <h1 className="text-[20px] tracking-widest">TECH BROS</h1>
         <div className="hidden md:block">

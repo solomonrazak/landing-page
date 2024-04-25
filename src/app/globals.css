@@ -9,3 +9,8 @@
   fill: white;
   display: inline-block;
 }
+
+.testimonial-quote {
+  margin-top: 20px; /* Adjust as needed */
+  margin-bottom: 10px; /* Adjust as needed */
+}
