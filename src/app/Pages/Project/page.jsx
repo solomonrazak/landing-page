@@ -11,17 +11,17 @@ function Projectpage() {
       //     "radial-gradient(44.48% 44.48% at 50% 50%, rgba(250, 117, 248, 0.26) 0%, rgba(250, 117, 248, 0) 100%)",
       // }}
     >
-      <p className="text-center text-2xl font-bold lg:text-5xl pb-3 ">
+      <p className="md:text-center mx-4 text-3xl font-bold lg:text-5xl pb-3 ">
         Projects Lorem, ipsum dolor.
       </p>
-      <p className="text-center mt-2 text-lg lg:text-2xl md:mx-40 md:mb-[-30px] ">
+      <p className="md:text-center mt-2 mx-4 text-lg lg:text-2xl md:mx-40 md:mb-[-30px] ">
         Lorem ipsum dolor sit amet, consectetur
       </p>
 
-      <div className="flex flex-col px-[10%] md:mt-20 md:px-[5%]">
+      <div className="flex flex-col mx-4 md:mt-20 md:px-[5%]">
         <div className="mt-20 flex flex-col md:flex-row md:justify-between ">
           <div className="md:w-1/2">
-            <p className="text-2xl lg:text-4xl">
+            <p className="text-2xl lg:text-4xl font-semibold">
               Lorem ipsum <br />
               dolor sit.
             </p>
@@ -50,7 +50,7 @@ function Projectpage() {
 
         <div className="mt-20 md:mt-60 flex flex-col md:flex-row-reverse md:justify-between ">
           <div className="md:w-1/2">
-            <p className="text-2xl lg:text-4xl">
+            <p className="text-2xl lg:text-4xl font-semibold">
               Lorem ipsum <br />
               dolor sit.
             </p>
@@ -79,7 +79,7 @@ function Projectpage() {
 
         <div className="mt-20 md:mt-60 flex flex-col md:flex-row md:justify-between ">
           <div className="md:w-1/2">
-            <p className="text-2xl lg:text-4xl">
+            <p className="text-2xl lg:text-4xl font-semibold">
               Lorem ipsum <br />
               dolor sit.
             </p>
