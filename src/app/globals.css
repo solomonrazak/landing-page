@@ -3,14 +3,15 @@
 @tailwind utilities;
 
 .service-icon {
-  width: 28px;
-  height: 28px;
+  
   margin-right: 16px;
   fill: white;
   display: inline-block;
 }
 
 .testimonial-quote {
-  margin-top: 20px; /* Adjust as needed */
-  margin-bottom: 10px; /* Adjust as needed */
+  margin-top: 20px;
+  /* Adjust as needed */
+  margin-bottom: 10px;
+  /* Adjust as needed */
 }
