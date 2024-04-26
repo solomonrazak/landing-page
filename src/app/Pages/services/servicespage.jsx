@@ -58,6 +58,7 @@ const Services = () => {
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full h-96 w-96 opacity-50 z-0"></div>
 
       {/* Heading */}
+
       <h1 className="text-white text-2xl md:text-5xl py-4 font-bold text-center tracking-widest z-0">
         Our Services
       </h1>
@@ -160,6 +161,7 @@ const Services = () => {
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
