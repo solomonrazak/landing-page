@@ -9,10 +9,11 @@ function Testimonial() {
   const testimonials = [
     {
       quote:
-        "Superhuman is a key tool in our tech stack that everyone gets onboarded to when they join the team. With the peace of mind an organized inbox brings, they can focus.",
+        "Superhuman is a key tool in our tech stack that everyone gets onboarded to when they join the team. ",
       name: "Shekar Kumar",
       role: "CEO and Manager",
       buttonName: "deal",
+      imageName: "/images/profile.webp",
     },
     {
       quote:
@@ -20,6 +21,7 @@ function Testimonial() {
       name: "John Doe",
       role: "CTO",
       buttonName: "code",
+      imageName: "/images/profile1.webp",
     },
     {
       quote:
@@ -27,24 +29,22 @@ function Testimonial() {
       name: "Jane Doe",
       role: "COO",
       buttonName: "gem",
+      imageName: "/images/profile2.webp",
     },
   ];
 
   useEffect(() => {
-    // Change testimonial every 5 seconds
     const interval = setInterval(() => {
       setTestimonialIndex((prevIndex) =>
         prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
       );
-    }, 5000);
-
-    // Update active button index
-    setActiveButton((prevIndex) =>
-      prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
-    );
+      setActiveButton((prevIndex) =>
+        prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 10000);
 
     return () => clearInterval(interval);
-  }, [testimonialIndex]); // Update effect when testimonialIndex changes
+  }, []);
 
   return (
     <div className="text-white mx-10 lg:mx-40 md:my-10 my-10">
@@ -67,7 +67,7 @@ function Testimonial() {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
-                  transition={{ duration: 0.36 }}
+                  transition={{ duration: 0.5 }}
                 >
                   {testimonial.quote}
                 </motion.p>
@@ -79,7 +79,7 @@ function Testimonial() {
             <div className="flex flex-row gap-6 md:items-center md:border-r-2 md:pr-10">
               <div className="">
                 <img
-                  src="/images/profile.webp"
+                  src={testimonials[testimonialIndex].imageName}
                   className="w-10 object-scale-down rounded-full"
                   alt=""
                 />
@@ -100,7 +100,7 @@ function Testimonial() {
             {testimonials.map((testimonial, index) => (
               <div className="" key={index}>
                 <button
-                  className={`px-4 py-2 md:text-4xl font-semibold rounded-md border-2 border-gray-500 ${
+                  className={`px-4 py-2 md:text-4xl font-semibold rounded-md border-2  border-gray-500 ${
                     index === activeButton ? "bg-gray-600" : ""
                   }`}
                   onClick={() => setActiveButton(index)}

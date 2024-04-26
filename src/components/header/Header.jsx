@@ -35,20 +35,20 @@ const Header = () => {
           initial={{ opacity: 0, y: 20 }} // Initial animation state
           animate={{ opacity: 1, y: 0 }} // Animation when component mounts
           transition={{ duration: 0.8, delay: 0.5 }} // Animation duration and delay
-          className="text-[37px] md:text-[5rem] font-medium text-center md:px-40"
+          className="text-[37px] md:text-[5rem] font-medium px-6 text-2xl md:text-center mt-6 md:mt-0 md:px-40 leading-snug"
         >
           <h1>
-            The Fastest Software <br className="" />
+            The Fastest Software <br className="hidden md:block" />
             Service Ever Made
           </h1>
         </motion.div>
         {/* <h1 className="text-[37px] md:text-[5rem] font-medium mt-[-5px] md:mt-[-30px] text-center">
           Service Ever Made
         </h1> */}
-        <p className="text-[19px] font-medium md:text-[22px] mt-5 text-center px-6">
+        <p className="text-[19px] font-medium md:text-[22px] mt-5 md:text-center px-6">
           AI Powered Softwares for all companies
         </p>
-        <p className="text-[19px] text-center font-medium md:text-[22px] mt-2 px-6">
+        <p className="text-[19px] md:text-center font-medium md:text-[22px] mt-2 px-6">
           Get your product ready in <span>less than a month</span>
         </p>
       </div>
