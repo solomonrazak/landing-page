@@ -48,7 +48,8 @@ const Services = () => {
       className="bg-black w-screen mt-[6rem]    px-6"
       style={{
         background:
-          "radial-gradient(34.48% 34.48% at 50% 50%, rgba(250, 117, 248, 0.26) 0%, rgba(250, 117, 248, 0) 100%)",
+          "radial-gradient(44.48% 44.48% at 50% 63%, rgba(176, 117, 248, 0.15) 0%, rgba(250, 117, 248, 0) 80%)",
+          opacity: "0.85",
       }}
     >
       <Head>
