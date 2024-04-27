@@ -9,8 +9,6 @@ function Projectpage() {
       style={{
         background:
           "radial-gradient(14.48% 14.48% at 10% 10%, rgba(250, 117, 248, 0.26) 0%, rgba(250, 117, 248, 0) 100%)",
-        opacity:
-        "0.7",
       }}
     >
       <p className="md:text-center mx-4 text-3xl font-bold lg:text-5xl pb-3 ">

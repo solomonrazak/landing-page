@@ -27,10 +27,16 @@ const Header = () => {
       className="bg-black py-[7%] w-screen pt-20  md:pt-44"
       style={{
         background:
-          "radial-gradient(44.48% 44.48% at 50% 50%, rgba(250, 117, 248, 0.26) 0%, rgba(250, 117, 248, 0) 100%)",
+          "radial-gradient(44.48% 44.48% at 10% 50%, rgba(176, 117, 248, 0.18) 0%, rgba(250, 117, 248, 0) 100%)",
       }}
     >
-      <div className="flex flex-col justify-center items-center text-white ">
+      <div className="flex flex-col justify-center items-center text-white "
+            style={{
+              background:
+                "radial-gradient(44.48% 44.48% at 80% 50%, rgba(176, 117, 248, 0.05) 0%, rgba(250, 117, 248, 0) 80%)",
+                opacity: "0.85",
+            }}
+            >
         <motion.div
           initial={{ opacity: 0, y: 20 }} // Initial animation state
           animate={{ opacity: 1, y: 0 }} // Animation when component mounts
@@ -52,7 +58,11 @@ const Header = () => {
           Get your product ready in <span>less than a month</span>
         </p>
       </div>
-      <div className="flex justify-center mt-7">
+      <div className="flex justify-center mt-7"
+                  style={{
+                      opacity: "0.9",
+                  }}
+      >
         <button className="bg-gradient-to-r from-violet-400 to-pink-500 px-8  w-[80%] lg:w-[12rem] py-3 md:py-5 text-white md:text-xl rounded-md">
           Get Started
         </button>
