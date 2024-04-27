@@ -6,10 +6,11 @@ function Projectpage() {
   return (
     <div
       className="mx-4 mt-10 sm:mx-40 md:mx-20 text-gray-200 md:mt-10 md:pb-[10rem]"
-      // style={{
-      //   background:
-      //     "radial-gradient(44.48% 44.48% at 50% 50%, rgba(250, 117, 248, 0.26) 0%, rgba(250, 117, 248, 0) 100%)",
-      // }}
+      style={{
+        background:
+          "radial-gradient(44.48% 34.48% at 60% 43%, rgba(176, 117, 248, 0.15) 0%, rgba(250, 117, 248, 0) 80%)",
+          opacity: "0.85",
+      }}
     >
       <p className="md:text-center mx-4 text-3xl font-bold lg:text-5xl pb-3 ">
         Projects Lorem, ipsum dolor.
