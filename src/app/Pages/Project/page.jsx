@@ -62,7 +62,7 @@ function Projectpage() {
           <div className="mt-4 relative">
             <Image
               className="object-cover h-[12rem] md:h-[140%] mx-auto"
-              src="/images/Prabhat_Website.jpg"
+              src="/images/Prabhat_Website.JPG"
               alt=""
               priority={true}
               width={500}
@@ -91,7 +91,7 @@ function Projectpage() {
           <div className="relative">
             <Image
               className="object-cover h-[12rem] md:h-[140%] mx-auto"
-              src="/images/zack_website.jpg"
+              src="/images/zack_website.JPG"
               alt=""
               priority={true}
               width={500}
@@ -120,7 +120,7 @@ function Projectpage() {
           <div className="mt-4 relative">
             <Image
               className="object-cover h-[12rem] md:h-[140%] mx-auto"
-              src="/images/Sumit_new.jpg"
+              src="/images/Sumit_new.JPG"
               alt=""
               priority={true}
               width={500}
