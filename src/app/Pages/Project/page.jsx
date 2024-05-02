@@ -12,27 +12,29 @@ function Projectpage() {
       </p>
 
       <div className="flex flex-col mx-4 md:mt-20 md:px-[5%]">
-        <div className="mt-20 flex flex-col md:flex-row md:justify-between">
+        <div className="mt-20 flex flex-col md:flex-row md:justify-between md:gap-4 ">
           <div className="md:w-1/2">
-            <p className="text-2xl lg:text-4xl font-semibold">
-              PetCare
-            </p>
+            <p className="text-2xl lg:text-4xl font-semibold">PetCare</p>
             <p className="my-8 text-lg lg:text-xl">
-              Welcome to Pet Care, your premier destination for all things pets! From helpful 
-              care guides to heartwarming adoption stories. We&apos;re here to celebrate the joy and 
-              companionship that our furry friends bring.
+              Welcome to Pet Care, your premier destination for all things pets!
+              From helpful care guides to heartwarming adoption stories.
+              We&apos;re here to celebrate the joy and companionship that our
+              furry friends bring.
             </p>
-            <a href="https://petcare-tau.vercel.app" target="_blank" rel="noopener noreferrer">
-              <button className="mt-4 relative bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-600">
-                Click
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black lg:h-[140%]"></div>
+            <a
+              href="https://petcare-tau.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="bg-gradient-to-r from-violet-400 to-pink-500 font-semibold  w-[40%] lg:w-[8rem] py-3 my-4 text-white md:text-sm rounded-md">
+                Get Started
               </button>
             </a>
           </div>
 
           <div className="relative">
             <Image
-              className="object-cover h-[12rem] md:h-[140%] mx-auto"
+              className="object-cover h-[12rem] md:h-[100%] lg:h-[140%] mx-auto"
               src="/images/Projectt.JPG"
               alt=""
               priority={true}
@@ -43,25 +45,27 @@ function Projectpage() {
           </div>
         </div>
 
-        <div className="mt-20 md:mt-60 flex flex-col md:flex-row-reverse md:justify-between">
+        <div className="mt-20 md:mt-60 flex flex-col md:flex-row-reverse md:justify-between md:gap-4">
           <div className="md:w-1/2">
-            <p className="text-2xl lg:text-4xl font-semibold">
-              Bid-Bazar
-            </p>
+            <p className="text-2xl lg:text-4xl font-semibold">Bid-Bazar</p>
             <p className="my-8 text-lg lg:text-xl">
-              A platform where buyers and sellers can congregate for the purpose of seamless bidding and selling across a wide spectrum of items.
+              A platform where buyers and sellers can congregate for the purpose
+              of seamless bidding and selling across a wide spectrum of items.
             </p>
-            <a href="https://bid-bazaar-frontend.vercel.app" target="_blank" rel="noopener noreferrer">
-              <button className="mt-4 relative bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-600">
-                Click
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black lg:h-[140%]"></div>
+            <a
+              href="https://bid-bazaar-frontend.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="bg-gradient-to-r from-violet-400 to-pink-500 font-semibold  w-[40%] lg:w-[8rem] py-3  text-white md:text-sm rounded-md">
+                Get Started
               </button>
             </a>
           </div>
 
           <div className="mt-4 relative">
             <Image
-              className="object-cover h-[12rem] md:h-[140%] mx-auto"
+              className="object-cover h-[12rem] md:h-[100%] lg:h-[140%] mx-auto"
               src="/images/Prabhat_Website.JPG"
               alt=""
               priority={true}
@@ -72,25 +76,28 @@ function Projectpage() {
           </div>
         </div>
 
-        <div className="mt-20 md:mt-60 flex flex-col md:flex-row md:justify-between">
+        <div className="mt-20 md:mt-60 flex flex-col md:flex-row md:justify-between md:gap-4">
           <div className="md:w-1/2">
-            <p className="text-2xl lg:text-4xl font-semibold">
-              LeashPay
-            </p>
+            <p className="text-2xl lg:text-4xl font-semibold">LeashPay</p>
             <p className="my-8 text-lg lg:text-xl">
-              Regardless of the size of your business, LeashPay offers everything software and API needed to build a world-class payments experiences.
+              Regardless of the size of your business, LeashPay offers
+              everything software and API needed to build a world-class payments
+              experiences.
             </p>
-            <a href="https://leashpay.netlify.app" target="_blank" rel="noopener noreferrer">
-              <button className="mt-4 relative bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-600">
-                Click
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black lg:h-[140%]"></div>
+            <a
+              href="https://leashpay.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="bg-gradient-to-r from-violet-400 to-pink-500 mb-4 font-semibold  w-[40%] lg:w-[8rem] py-3  text-white md:text-sm rounded-md">
+                Get Started
               </button>
             </a>
           </div>
 
           <div className="relative">
             <Image
-              className="object-cover h-[12rem] md:h-[140%] mx-auto"
+              className="object-cover h-[12rem] md:h-[100%] lg:h-[140%] mx-auto"
               src="/images/Zack_website.JPG"
               alt=""
               priority={true}
@@ -101,18 +108,20 @@ function Projectpage() {
           </div>
         </div>
 
-        <div className="mt-20 md:mt-60 flex flex-col md:flex-row-reverse md:justify-between">
+        <div className="mt-20 md:mt-60 flex flex-col md:flex-row-reverse md:justify-between md:gap-4">
           <div className="md:w-1/2">
-            <p className="text-2xl lg:text-4xl font-semibold">
-              Nike Store
-            </p>
+            <p className="text-2xl lg:text-4xl font-semibold">Nike Store</p>
             <p className="my-8 text-lg lg:text-xl">
-              This is a full fledged Nike store that helps the consumer to buy the products they want
+              This is a full fledged Nike store that helps the consumer to buy
+              the products they want
             </p>
-            <a href="https://nike-clone-three.vercel.app" target="_blank" rel="noopener noreferrer">
-              <button className="mt-4 relative bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-600">
-                Click
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black lg:h-[140%]"></div>
+            <a
+              href="https://nike-clone-three.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="bg-gradient-to-r from-violet-400 to-pink-500 font-semibold  w-[40%] lg:w-[8rem] py-3   text-white md:text-sm rounded-md">
+                Get Started
               </button>
             </a>
           </div>
@@ -129,7 +138,6 @@ function Projectpage() {
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black lg:h-[140%]"></div>
           </div>
         </div>
-
       </div>
     </div>
   );
