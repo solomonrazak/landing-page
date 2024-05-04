@@ -39,7 +39,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="h-[2px] w-[90%] flex mx-auto bg-gray-500"></div>
-      <div className="flex flex-col md:flex-row text-white px-[5%] justify-between mt-[3%] pb-8" data-aos="fade-down">
+      <div className="flex flex-col md:flex-row text-white px-[5%] justify-between mt-[3%] pb-8">
         <div className="flex gap-3 mb-[18px] md:mb-0">
           <h1>Logo</h1>
           <p className="tracking-widest">Tech Bros</p>
