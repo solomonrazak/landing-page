@@ -3,17 +3,17 @@ import Image from "next/image";
 
 function Projectpage() {
   return (
-    <div className="mx-4 mt-10 sm:mx-40 md:mx-20 text-gray-200 md:mt-10 md:pb-[10rem]">
-      <p className="md:text-center mx-4 text-3xl font-bold lg:text-5xl pb-3">
+    <div className="mx-4 mt-10 sm:mx-40 md:mx-20 text-gray-200 md:mt-10 md:pb-[10rem]" data-aos="fade-down">
+      <p className="md:text-center mx-4 text-3xl font-bold lg:text-5xl pb-3" >
         Projects
       </p>
-      <p className="md:text-center mt-2 mx-4 text-lg lg:text-2xl md:mx-40 md:mb-[-30px]">
+      <p className="md:text-center mt-2 mx-4 text-lg lg:text-2xl md:mx-40 md:mb-[-30px]" >
         Awesome Projects made by our developers
       </p>
 
-      <div className="flex flex-col mx-4 md:mt-20 md:px-[5%]">
+      <div className="flex flex-col mx-4 md:mt-20 md:px-[5%]" >
         <div className="mt-20 flex flex-col md:flex-row md:justify-between md:gap-4 ">
-          <div className="md:w-1/2">
+          <div className="md:w-1/2" data-aos="fade-down-right">
             <p className="text-2xl lg:text-4xl font-semibold">PetCare</p>
             <p className="my-8 text-lg lg:text-xl">
               Welcome to Pet Care, your premier destination for all things pets!
@@ -32,7 +32,7 @@ function Projectpage() {
             </a>
           </div>
 
-          <div className="relative">
+          <div className="relative" data-aos="flip-up">
             <Image
               className="object-cover h-[12rem] md:h-[100%] lg:h-[140%] mx-auto"
               src="/images/Projectt.JPG"
@@ -46,7 +46,7 @@ function Projectpage() {
         </div>
 
         <div className="mt-20 md:mt-60 flex flex-col md:flex-row-reverse md:justify-between md:gap-4">
-          <div className="md:w-1/2">
+          <div className="md:w-1/2"  data-aos="fade-down-left">
             <p className="text-2xl lg:text-4xl font-semibold">Bid-Bazar</p>
             <p className="my-8 text-lg lg:text-xl">
               A platform where buyers and sellers can congregate for the purpose
@@ -63,7 +63,7 @@ function Projectpage() {
             </a>
           </div>
 
-          <div className="mt-4 relative">
+          <div className="mt-4 relative"  data-aos="zoom-in">
             <Image
               className="object-cover h-[12rem] md:h-[100%] lg:h-[140%] mx-auto"
               src="/images/Prabhat_Website.JPG"
@@ -76,8 +76,8 @@ function Projectpage() {
           </div>
         </div>
 
-        <div className="mt-20 md:mt-60 flex flex-col md:flex-row md:justify-between md:gap-4">
-          <div className="md:w-1/2">
+        <div className="mt-20 md:mt-60 flex flex-col md:flex-row md:justify-between md:gap-4" >
+          <div className="md:w-1/2" data-aos="fade-up-right">
             <p className="text-2xl lg:text-4xl font-semibold">LeashPay</p>
             <p className="my-8 text-lg lg:text-xl">
               Regardless of the size of your business, LeashPay offers
@@ -95,7 +95,7 @@ function Projectpage() {
             </a>
           </div>
 
-          <div className="relative">
+          <div className="relative" data-aos="zoom-in-up">
             <Image
               className="object-cover h-[12rem] md:h-[100%] lg:h-[140%] mx-auto"
               src="/images/Zack_website.JPG"
@@ -109,7 +109,7 @@ function Projectpage() {
         </div>
 
         <div className="mt-20 md:mt-60 flex flex-col md:flex-row-reverse md:justify-between md:gap-4">
-          <div className="md:w-1/2">
+          <div className="md:w-1/2"  data-aos="fade-up">
             <p className="text-2xl lg:text-4xl font-semibold">Nike Store</p>
             <p className="my-8 text-lg lg:text-xl">
               This is a full fledged Nike store that helps the consumer to buy
@@ -126,7 +126,7 @@ function Projectpage() {
             </a>
           </div>
 
-          <div className="mt-4 relative">
+          <div className="mt-4 relative"  data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
             <Image
               className="object-cover h-[12rem] md:h-[140%] mx-auto"
               src="/images/Sumit_new.JPG"
