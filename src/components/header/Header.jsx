@@ -46,7 +46,8 @@ const Header = () => {
           className="text-[37px] md:text-[5rem] font-medium px-6 text-2xl md:text-center mt-6 md:mt-0 md:px-40 leading-snug"
         >
           <h1 className="text-center">
-            The Fastest Software Service Ever Made
+            The Fastest Software <br />
+            Service Ever Made
           </h1>
         </motion.div>
         {/* <h1 className="text-[37px] md:text-[5rem] font-medium mt-[-5px] md:mt-[-30px] text-center">
@@ -69,7 +70,10 @@ const Header = () => {
           Get Started
         </button>
       </div>
-      <div className="flex justify-center mt-[30px] p-8 overflow-x-hidden md:mt-20" data-aos="flip-up">
+      <div
+        className="flex justify-center mt-[30px] p-8 overflow-x-hidden md:mt-20"
+        data-aos="zoom-out"
+      >
         {image && (
           <Image
             src="/images/project1.jpg"

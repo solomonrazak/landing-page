@@ -45,12 +45,11 @@ const uiuxIcon = (
 const Services = () => {
   return (
     <div
-    
       className="bg-black w-screen mt-[6rem]    px-6"
       style={{
         background:
           "radial-gradient(44.48% 44.48% at 50% 63%, rgba(176, 117, 248, 0.15) 0%, rgba(250, 117, 248, 0) 80%)",
-          opacity: "0.85",
+        opacity: "0.85",
       }}
     >
       <Head>
@@ -69,7 +68,7 @@ const Services = () => {
       <div className="md:mx-20 lg:mx-40 mb-20">
         <div className="flex flex-col md:flex-row md:gap-10 justify-between ">
           <div className="md:w-1/2" data-aos="zoom-in-right">
-            <div className="flex flex-row text-white gap-3 mt-8 md:mt-16" >
+            <div className="flex flex-row text-white gap-3 mt-8 md:mt-16">
               <div className="">
                 <div className=" border-2 w-7 md:w-12 border-white  px-1 md:px-3 md:py-2 rounded-md">
                   {webIcon}
@@ -116,7 +115,7 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="md:w-1/2" data-aos="zoom-in-left">
+          <div className="md:w-1/2" data-aos="zoom-in-right">
             <div className="flex flex-row text-white gap-3 mt-8 md:mt-16">
               <div className="">
                 <div className=" border-2 w-7 md:w-12 border-white  px-1 md:px-3 md:py-2 rounded-md">
@@ -163,7 +162,6 @@ const Services = () => {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
