@@ -1,26 +1,35 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-// import "./nav.css"
 import { IoMdMenu } from "react-icons/io";
 
 const Navbar = () => {
   const [shownav, setShownav] = useState(false);
+  const [scroll, setScroll] = useState(false);
 
-  // function to close nav on window resize
   useEffect(() => {
-    const closeNavOnMax = () => {
-      if (window.innerWidth > 768) {
-        setShownav(false);
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScroll(true);
+      } else {
+        setScroll(false);
       }
     };
-    window.addEventListener("resize", closeNavOnMax);
-    return window.removeEventListener("resize", closeNavOnMax);
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   return (
     <div className="w-screen">
-      <div className="w-full px-[5%] flex justify-between bg-black text-white  opacity-90 top-0 py-5 items-center overflow-x-hidden fixed z-40 ">
+      <div
+        className={`w-full px-[5%] flex justify-between text-white top-0 py-5 items-center fixed z-40 ${
+          scroll ? "bg-black" : "bg-transparent"
+        } transition duration-300`}
+      >
         <div className="flex gap-9 items-center">
           <h1 className="text-[20px] tracking-widest">TECH BROS</h1>
           <div className="hidden md:block">
