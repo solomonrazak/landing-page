@@ -81,7 +81,7 @@ const Header = () => {
       {/* Book a consultation pop up */}
       <div className="w-full flex justify-center">
         {modal && 
-      <div className="md:w-[95%] bg-white z-50 fixed md:top-[1rem] px-4 py-6 md:py-[5rem] md:px-8 flex flex-col md:flex-row justify-between gap-5 md:gap-[7rem] overflow-y-visible">
+      <div className="md:w-[95%] bg-white z-80 fixed md:top-[1rem] px-4 py-6 md:py-[5rem] md:px-8 flex flex-col md:flex-row justify-between gap-5 md:gap-[7rem] overflow-y-visible">
         {/* left side */}
         <div className="flex flex-col gap-3 md:gap-7 md:w-[35%] pt-12">
           <h1 className="text-[27px] md:text-[3rem] text-blue-500 md:mb-4 tracking-wider">Let's Start</h1>

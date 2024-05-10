@@ -47,11 +47,11 @@ const Navbar = () => {
               <li>
                 <Link href="">About</Link>
               </li>
-              <li className="pr-[12px] mt-[13px]">
-                <Link href=""></Link>
+              <li >
+                <Link href="">Projects</Link>
               </li>
-              <li className="pr-[12px] mt-[13px]">
-                <Link href=""></Link>
+              <li>
+                <Link href="">Services</Link>
               </li>
               <li>
                 <Link href="">Contact Us</Link>
@@ -80,7 +80,7 @@ const Navbar = () => {
 
       {shownav && (
         <div
-          className="md:hidden fixed z-50 bg-black top-16  w-full    flex flex-col justify-around py-2"
+          className="md:hidden fixed bg-black top-16 w-full  flex flex-col justify-around py-2 z-10"
           data-aos="fade-up"
         >
           <ul className="text-white text-center flex flex-col gap-2  text-2xl font-semibold">

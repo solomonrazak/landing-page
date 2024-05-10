@@ -17,7 +17,7 @@ const Footer = () => {
           <span>Ever made</span>
         </h1>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-11">
+        
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-11" data-aos="fade-up">
 
@@ -63,7 +63,7 @@ const Footer = () => {
         </div>
       </div>
     </div>
-    </div>
+    
   );
 };
 
