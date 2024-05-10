@@ -8,15 +8,19 @@ const Footer = () => {
       style={{ fontFamily: "adelle" }}
     >
       <div className="flex flex-col md:flex-row text-white justify-between md:px-[5%] py-[4%] pr-20 pl-10 pt-10">
-        <h1
-          className="font-medium flex flex-col text-[30px] md:text-[3em] mb-10 md:mb-0"
-          data-aos="flip-right"
-        >
+
+
+        <h1 className="font-medium flex flex-col text-[30px] md:text-[3em] mb-10 md:mb-0"  data-aos="fade-up">
+
           <span>The Fastest</span>
           <span>Software Experience</span>
           <span>Ever made</span>
         </h1>
+
         <div className="grid grid-cols-2 md:grid-cols-4 gap-11">
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-11" data-aos="fade-up">
+
           <div className="flex flex-col">
             <h1 className="font-medium mb-4">Company</h1>
             <p className="text-gray-300 mb-2">Blog</p>
@@ -58,6 +62,7 @@ const Footer = () => {
           <FaYoutube />
         </div>
       </div>
+    </div>
     </div>
   );
 };

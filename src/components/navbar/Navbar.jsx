@@ -2,10 +2,20 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { IoMdMenu } from "react-icons/io";
+import { useModalContext } from "@/app/ModalContext";
 
 const Navbar = () => {
   const [shownav, setShownav] = useState(false);
+
   const [scroll, setScroll] = useState(false);
+
+  //context api
+  const { setModal } =  useModalContext()
+
+  function modalHandler(){
+    setModal(true);
+  }
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,15 +43,15 @@ const Navbar = () => {
         <div className="flex gap-9 items-center">
           <h1 className="text-[20px] tracking-widest">TECH BROS</h1>
           <div className="hidden md:block">
-            <ul className="flex gap-8">
+            <ul className="flex gap-10 items-center">
               <li>
                 <Link href="">About</Link>
               </li>
-              <li>
-                <Link href="">Projects</Link>
+              <li className="pr-[12px] mt-[13px]">
+                <Link href=""></Link>
               </li>
-              <li>
-                <Link href="">Services</Link>
+              <li className="pr-[12px] mt-[13px]">
+                <Link href=""></Link>
               </li>
               <li>
                 <Link href="">Contact Us</Link>
@@ -60,8 +70,8 @@ const Navbar = () => {
               <IoMdMenu />
             </button>
           </div>
-          <button className="bg-gradient-to-r from-violet-400 to-pink-500 py-2 px-5 rounded-md text-[18px] hidden md:block">
-            Call to Book
+          <button className="bg-pink-400 py-2 px-5 text-[18px] hover:bg-transparent hover:border hover:border-pink-400 hover:text-pink-400 hidden md:block" onClick={modalHandler}>
+            Get in Touch
           </button>
         </div>
       </div>
@@ -87,8 +97,8 @@ const Navbar = () => {
               <Link href="">Contact Us</Link>
             </li>
           </ul>
-          <button className="bg-gradient-to-r mx-auto my-4 from-violet-400 font-semibold text-2xl to-pink-500 px-8  w-[80%] lg:w-[12rem] py-3 md:py-5 text-white md:text-xl rounded-md">
-            Call to Book
+          <button className="bg-gradient-to-r mx-auto my-4 from-violet-400 font-semibold text-2xl to-pink-500 px-8  w-[80%] lg:w-[12rem] py-3 md:py-5 text-white md:text-xl rounded-md" onClick={modalHandler}>
+            Get in Touch
           </button>
         </div>
       )}
