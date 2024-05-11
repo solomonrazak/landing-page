@@ -74,7 +74,7 @@ function Testimonial() {
               )
           )}
         </AnimatePresence>
-        <div className="mt-72 md:mt-60 lg:mt-80  flex flex-col md:flex-row justify-between" data-aos="fade-down">
+        <div className="mt-72 md:mt-60 lg:mt-80  flex flex-col md:flex-row justify-between" data-aos="zoom-out-down">
           <div>
             <div className="flex flex-row gap-6 md:items-center md:border-r-2 md:pr-10">
               <div className="">
