@@ -102,11 +102,8 @@ const Services = () => {
       {/* Services Content */}
       <div className="md:mx-20 lg:mx-40 mb-20">
         <div className="flex flex-col md:flex-row md:gap-10 justify-between ">
-
-
-          <div className="md:w-1/2" data-aos="fade-up">
-            <div className="flex flex-row text-white gap-3 mt-8 md:mt-16" >
-
+          <div className="md:w-1/2" data-aos="zoom-in-right">
+            <div className="flex flex-row text-white gap-3 mt-8 md:mt-16">
               <div className="">
                 <div className=" border-2 w-7 md:w-12 border-white  px-1 md:px-3 md:py-2 rounded-md">
                   {webIcon}
@@ -164,11 +161,7 @@ const Services = () => {
             </div>
           </div>
 
-
-          
-
-          <div className="md:w-1/2" data-aos="fade-up">
-
+          <div className="md:w-1/2" data-aos="zoom-in-right">
             <div className="flex flex-row text-white gap-3 mt-8 md:mt-16">
               <div className="">
                 <div className=" border-2 w-7 md:w-12 border-white  px-1 md:px-3 md:py-2 rounded-md">

@@ -1,32 +1,11 @@
-"use client";
-import Image from "next/image";
-import { useState, useEffect, useContext} from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import axios from "axios";
-import { HiArrowLongDown } from "react-icons/hi2";
-import { LuCircle } from "react-icons/lu";
-import { FaRegCircle } from "react-icons/fa";
-// import { PiLineVertical } from 'react-icons/pi';
-import { RxDividerVertical } from "react-icons/rx";
-import styles from './header.module.css';
-import { useRouter } from "next/navigation";
-import { IoMdAttach } from "react-icons/io";
-import { FaCalendarAlt } from "react-icons/fa";
-import { VscChromeClose } from "react-icons/vsc";
-import { useModalContext } from "@/app/ModalContext";
+import Image from "next/image";
 import "../../app/fonts.css";
-
-
 const Header = () => {
   const key = "nI4q8pGvBqtTV2l2qtnl_j2AKAr6LH9mHXNCl4pU1P4";
   const [image, setImage] = useState(null);
-
-  //context api
-  const {modal, setModal} =  useModalContext()
-
-  
-
-  
 
   useEffect(() => {
     const fetchImage = async () => {
@@ -42,13 +21,7 @@ const Header = () => {
     fetchImage();
   }, []);
 
-  const router = useRouter();
-
-
- 
-
   return (
-
     <>
       <video
         autoPlay
@@ -75,6 +48,7 @@ const Header = () => {
       >
         <div className="bg-black w-full h-screen opacity-70 absolute top-0 left-0"></div>
         <div
+<<<<<<< HEAD
           className="flex flex-col justify-center items-center text-white relative z-10"></div>
 
     
@@ -176,6 +150,9 @@ const Header = () => {
         <div
           className="flex flex-col justify-center items-center text-white "
 
+=======
+          className="flex flex-col justify-center items-center text-white relative z-10"
+>>>>>>> 407fd41df8f54d0daf1f227491fdd89d101d3df7
           style={{
             background:
               "radial-gradient(44.48% 44.48% at 80% 50%, rgba(176, 117, 248, 0.05) 0%, rgba(250, 117, 248, 0) 80%)",
@@ -183,22 +160,16 @@ const Header = () => {
           }}
         >
           <motion.div
-
-
-
-            initial={{ opacity: 0, y: 20 }} // Initial animation state
-            animate={{ opacity: 1, y: 0 }} // Animation when component mounts
-            transition={{ duration: 0.8, delay: 0.5 }} // Animation duration and delay
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
             className="text-[37px] md:text-[5rem] font-medium px-6 text-2xl md:text-center mt-6 md:mt-0 md:px-40 leading-snug"
           >
             <h1 className="text-center">
-              The Fastestddd Software Service Ever Made
+              The Fastest Software <br />
+              Service Ever Made
             </h1>
           </motion.div>
-          {/* <h1 className="text-[37px] md:text-[5rem] font-medium mt-[-5px] md:mt-[-30px] text-center">
-          Service Ever Made
-        </h1> */}
-
           <p className="text-[19px] font-medium md:text-[22px] mt-5 md:text-center px-6">
             AI Powered Softwares for all companies
           </p>
@@ -207,30 +178,19 @@ const Header = () => {
           </p>
         </div>
 
-
-
-
         <div
           className="flex justify-center mt-7"
           style={{
             opacity: "0.9",
           }}
         >
-
           <button className="bg-gradient-to-r from-violet-400 to-pink-500 px-8 w-[80%] lg:w-[12rem] py-3 md:py-5 text-white md:text-xl rounded-md">
-
-          
-
             Get Started
           </button>
         </div>
         <div
           className="flex justify-center mt-[30px] p-8 overflow-x-hidden md:mt-20"
-
-          
-
-          data-aos="fade-up"
-
+          data-aos="zoom-out"
         >
           {image && (
             <Image
@@ -245,13 +205,7 @@ const Header = () => {
           )}
         </div>
       </div>
-
-    
-
-      </div>
-    </div>
     </>
-
   );
 };
 
