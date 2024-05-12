@@ -137,7 +137,7 @@ const Services = () => {
                 </h1>
                 <p className="text-lg mt-2 md:text-xl md:leading-relaxed">
                   Embrace the mobile revolution with our cutting-edge app
-                  development services. Whether it's iOS, Android, or
+                  development services. Whether its iOS, Android, or
                   cross-platform solutions, our experts are dedicated to
                   creating intuitive and engaging mobile applications that
                   resonate with your audience.
@@ -178,10 +178,10 @@ const Services = () => {
                 </h1>
                 <p className="text-lg mt-2 md:text-xl md:leading-relaxed">
                   Experience peace of mind with our responsive technical support
-                  services. Whether it's troubleshooting, maintenance, or
-                  ongoing assistance, our dedicated team is committed to
-                  providing prompt and reliable support to keep your operations
-                  running smoothly.
+                  services. Whether its troubleshooting, maintenance, or ongoing
+                  assistance, our dedicated team is committed to providing
+                  prompt and reliable support to keep your operations running
+                  smoothly.
                 </p>
               </div>
             </div>
