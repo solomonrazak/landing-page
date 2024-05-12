@@ -4,14 +4,11 @@ const Footer = () => {
   return (
     <div
       className="bg-black w-screen bottom-0 "
-      data-aos="fade-down"
+      data-aos=""
       style={{ fontFamily: "adelle" }}
     >
       <div className="flex flex-col md:flex-row text-white justify-between md:px-[5%] py-[4%] pr-20 pl-10 pt-10">
-        <h1
-          className="font-medium flex flex-col text-[30px] md:text-[3em] mb-10 md:mb-0"
-          data-aos="flip-right"
-        >
+        <h1 className="font-medium flex flex-col text-[30px] md:text-[3em] mb-10 md:mb-0">
           <span>The Fastest</span>
           <span>Software Experience</span>
           <span>Ever made</span>

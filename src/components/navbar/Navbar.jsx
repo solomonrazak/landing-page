@@ -69,10 +69,7 @@ const Navbar = () => {
       {/* mobile nav */}
 
       {shownav && (
-        <div
-          className="md:hidden fixed z-50 bg-black top-16  w-full    flex flex-col justify-around py-2"
-          data-aos="fade-up"
-        >
+        <div className="md:hidden fixed z-50 bg-black top-16  w-full    flex flex-col justify-around py-2">
           <ul className="text-white text-center flex flex-col gap-2  text-2xl font-semibold">
             <li className="hover:bg-gradient-to-r from-violet-400 to-pink-500 tracking-wider mt-[-8px] py-2">
               <Link href="">About</Link>
