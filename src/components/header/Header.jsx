@@ -61,15 +61,15 @@ const Header = () => {
             transition={{ duration: 0.8, delay: 0.5 }}
             className="text-[37px] md:text-[5rem] font-medium px-6 text-2xl md:text-center mt-6 md:mt-0 md:px-40 leading-snug"
           >
-            <h1 className="text-center">
+            <h1 className="">
               The Fastest Software <br />
               Service Ever Made
             </h1>
           </motion.div>
-          <p className="text-[19px] font-medium md:text-[22px] mt-5 md:text-center px-6">
+          <p className=" text-[19px] font-medium md:text-[22px] mt-5 md:text-center px-6">
             AI Powered Softwares for all companies
           </p>
-          <p className="text-[19px] md:text-center font-medium md:text-[22px] mt-2 px-6">
+          <p className=" text-[19px] md:text-center font-medium md:text-[22px] mt-2 px-6">
             Get your product ready in <span>less than a month</span>
           </p>
         </div>
@@ -86,7 +86,7 @@ const Header = () => {
         </div>
         <div
           className="flex justify-center mt-[30px] p-8 overflow-x-hidden md:mt-20"
-          data-aos="zoom-out"
+          data-aos="zoom-in"
         >
           {image && (
             <Image
