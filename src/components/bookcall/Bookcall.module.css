@@ -14,11 +14,11 @@
     content: '';
     position: absolute;
     left: 0;
-    bottom: -9px; /* Adjust this value to change the space between text and underline */
+    bottom: -9px; /* 
     width: 14.5rem;
     height: 1px;
-    background-color: red; /* Use the same color as the text */
-    transition: bottom 1000 ease-in-out; /* Adjust transition duration and easing as needed */
+    background-color: red; 
+    transition: bottom 1000 ease-in-out; 
     opacity: 1; /* Show the underline on hover */
   }
 
@@ -32,7 +32,7 @@
     cursor: pointer;
     padding: 6px 6px;
     margin-left: 5rem;
-    color: #333; /* Change as needed */
+    color: #333; 
     transition: background-color 0.3s ease;
     font-weight: 600;
   }

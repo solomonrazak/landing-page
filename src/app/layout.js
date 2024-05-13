@@ -3,6 +3,7 @@ import "./globals.css";
 import Footer from "@/components/footer/Footer";
 import Navbar from "@/components/navbar/Navbar";
 import { Modal } from "./ModalContext";
+import BookCall from "@/components/bookcall/BookCall";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +22,10 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`${inter.className}`}>
         <Modal>
+       
         <Navbar />
+        <BookCall />
+        
         {children}
         <Footer />
         </Modal>
