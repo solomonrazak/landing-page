@@ -48,7 +48,7 @@ function Testimonial() {
 
   return (
     <div className="text-white mx-10 lg:mx-40 md:my-10 my-10">
-      <div className="flex-col" >
+      <div className="flex-col">
         <div>
           <img
             src="/images/qoute.webp"
@@ -74,7 +74,7 @@ function Testimonial() {
               )
           )}
         </AnimatePresence>
-        <div className="mt-72 md:mt-60 lg:mt-80  flex flex-col md:flex-row justify-between" data-aos="fade-down">
+        <div className="mt-72 md:mt-60 lg:mt-80  flex flex-col md:flex-row justify-between">
           <div>
             <div className="flex flex-row gap-6 md:items-center md:border-r-2 md:pr-10">
               <div className="">

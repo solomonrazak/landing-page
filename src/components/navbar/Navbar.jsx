@@ -2,20 +2,10 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { IoMdMenu } from "react-icons/io";
-import { useModalContext } from "@/app/ModalContext";
 
 const Navbar = () => {
   const [shownav, setShownav] = useState(false);
-
   const [scroll, setScroll] = useState(false);
-
-  //context api
-  const { setModal } =  useModalContext()
-
-  function modalHandler(){
-    setModal(true);
-  }
-
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,11 +33,11 @@ const Navbar = () => {
         <div className="flex gap-9 items-center">
           <h1 className="text-[20px] tracking-widest">TECH BROS</h1>
           <div className="hidden md:block">
-            <ul className="flex gap-10 items-center">
+            <ul className="flex gap-8">
               <li>
                 <Link href="">About</Link>
               </li>
-              <li >
+              <li>
                 <Link href="">Projects</Link>
               </li>
               <li>
@@ -70,8 +60,11 @@ const Navbar = () => {
               <IoMdMenu />
             </button>
           </div>
-          <button className="bg-pink-400 py-2 px-5 text-[18px] hover:bg-transparent hover:border hover:border-pink-400 hover:text-pink-400 hidden md:block z-10" onClick={modalHandler}>
+
+          <button className="bg-pink-400 py-2 px-5 text-[18px] hover:bg-transparent hover:border hover:border-pink-400 hover:text-pink-400 hidden md:block z-10">
             Get in Touch
+
+         
           </button>
         </div>
       </div>
@@ -79,10 +72,7 @@ const Navbar = () => {
       {/* mobile nav */}
 
       {shownav && (
-        <div
-          className="md:hidden fixed bg-black top-16 w-full  flex flex-col justify-around py-2 z-10"
-          data-aos="fade-up"
-        >
+        <div className="md:hidden fixed z-50 bg-black top-16  w-full    flex flex-col justify-around py-2">
           <ul className="text-white text-center flex flex-col gap-2  text-2xl font-semibold">
             <li className="hover:bg-gradient-to-r from-violet-400 to-pink-500 tracking-wider mt-[-8px] py-2">
               <Link href="">About</Link>
@@ -97,8 +87,8 @@ const Navbar = () => {
               <Link href="">Contact Us</Link>
             </li>
           </ul>
-          <button className="bg-gradient-to-r mx-auto my-4 from-violet-400 font-semibold text-2xl to-pink-500 px-8  w-[80%] lg:w-[12rem] py-3 md:py-5 text-white md:text-xl rounded-md" onClick={modalHandler}>
-            Get in Touch
+          <button className="bg-gradient-to-r mx-auto my-4 from-violet-400 font-semibold text-2xl to-pink-500 px-8  w-[80%] lg:w-[12rem] py-3 md:py-5 text-white md:text-xl rounded-md">
+            Call to Book
           </button>
         </div>
       )}

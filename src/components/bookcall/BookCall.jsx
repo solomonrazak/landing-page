@@ -1,20 +1,19 @@
 "use client"
 
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import styles from './Bookcall.module.css';
-import { useRouter } from "next/navigation";
-import { IoMdAttach } from "react-icons/io";
-import { FaCalendarAlt } from "react-icons/fa";
-import { VscChromeClose } from "react-icons/vsc";
-import { useModalContext } from '@/app/ModalContext';
+// import { useRouter } from "next/navigation";
+
+// import { useModalContext } from '@/app/ModalContext';
 import "../../app/fonts.css";
 
 const BookCall = () => {
+  const [modal, setModal] = useState(false)
 
     //context api
-  const {modal, setModal} =  useModalContext()
-  const router = useRouter();
+  // const {modal, setModal} =  useModalContext()
+  // const router = useRouter();
   return (
       <div className='z-50' style={{zIndex: '9999'}}>
          {modal && 

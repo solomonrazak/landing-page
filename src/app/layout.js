@@ -2,8 +2,11 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/footer/Footer";
 import Navbar from "@/components/navbar/Navbar";
-import { Modal } from "./ModalContext";
+
+// import { Modal } from "./ModalContext";
 import BookCall from "@/components/bookcall/BookCall";
+
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,14 +24,16 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
       </head>
       <body className={`${inter.className}`}>
-        <Modal>
+
+        {/* <Modal> */}
        
+
         <Navbar />
         <BookCall />
         
         {children}
         <Footer />
-        </Modal>
+        {/* </Modal> */}
       </body>
     </html>
   );
