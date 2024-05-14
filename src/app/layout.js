@@ -4,7 +4,7 @@ import Footer from "@/components/footer/Footer";
 import Navbar from "@/components/navbar/Navbar";
 
 // import { Modal } from "./ModalContext";
-import BookCall from "@/components/bookcall/BookCall";
+
 
 
 
@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
        
 
         <Navbar />
-        <BookCall />
+        
         
         {children}
         <Footer />

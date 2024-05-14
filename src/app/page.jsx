@@ -7,6 +7,7 @@ import Services from "./Pages/services/servicespage.jsx";
 import Testimonial from "@/components/Testimonial.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import BookCall from "@/components/bookcall/BookCall.jsx";
 
 export default function Home() {
   useEffect(() => {
