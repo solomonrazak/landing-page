@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <div className="w-screen">
       <div
-        className={`w-full px-[5%] flex justify-between text-white top-0 py-5 items-center fixed z-40 ${
+        className={`w-full px-[5%] flex justify-between text-white top-0 py-5 items-center fixed z-10 ${
           scroll ? "bg-black" : "bg-transparent"
         } transition duration-300`}
       >
@@ -60,8 +60,11 @@ const Navbar = () => {
               <IoMdMenu />
             </button>
           </div>
-          <button className="bg-gradient-to-r from-violet-400 to-pink-500 py-2 px-5 rounded-md text-[18px] hidden md:block">
-            Call to Book
+
+          <button className="bg-pink-400 py-2 px-5 text-[18px] hover:bg-transparent hover:border hover:border-pink-400 hover:text-pink-400 hidden md:block z-10">
+            Get in Touch
+
+         
           </button>
         </div>
       </div>

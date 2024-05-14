@@ -1,11 +1,16 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import axios from "axios";
+
+import "../../app/fonts.css";
+
 import Image from "next/image";
 import "../../app/fonts.css";
+
 const Header = () => {
   const key = "nI4q8pGvBqtTV2l2qtnl_j2AKAr6LH9mHXNCl4pU1P4";
   const [image, setImage] = useState(null);
+
 
   useEffect(() => {
     const fetchImage = async () => {
@@ -20,6 +25,7 @@ const Header = () => {
     };
     fetchImage();
   }, []);
+
 
   return (
     <>
@@ -48,7 +54,28 @@ const Header = () => {
       >
         <div className="bg-black w-full h-screen opacity-70 absolute top-0 left-0"></div>
         <div
-          className="flex flex-col justify-center items-center text-white relative z-10"
+
+          className="flex flex-col justify-center items-center text-white relative z-10"></div>
+
+    
+      {/* Book a consultation pop up */}
+     
+      
+      
+      <div
+        data-aos="fade-up"
+        className="bg-black py-[7%] w-screen pt-20  md:pt-44"
+        style={{
+          background:
+            "radial-gradient(44.48% 44.48% at 10% 50%, rgba(176, 117, 248, 0.18) 0%, rgba(250, 117, 248, 0) 100%)",
+        }}
+      >
+        <div
+          className="flex flex-col justify-center items-center text-white "
+
+
+          
+
           style={{
             background:
               "radial-gradient(44.48% 44.48% at 80% 50%, rgba(176, 117, 248, 0.05) 0%, rgba(250, 117, 248, 0) 80%)",
@@ -61,9 +88,13 @@ const Header = () => {
             transition={{ duration: 0.8, delay: 0.5 }}
             className="text-[37px] md:text-[5rem] font-medium px-6 text-2xl md:text-center mt-6 md:mt-0 md:px-40 leading-snug"
           >
+
+           
+
             <h1 className="">
               The Fastest Software <br />
               Service Ever Made
+
             </h1>
           </motion.div>
           <p className=" text-[19px] font-medium md:text-[22px] mt-5 md:text-center px-6">
@@ -101,6 +132,13 @@ const Header = () => {
           )}
         </div>
       </div>
+
+
+      
+
+      </div>
+    
+
     </>
   );
 };
