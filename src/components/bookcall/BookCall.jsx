@@ -3,7 +3,10 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import styles from './Bookcall.module.css';
-// import { useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
+import { IoMdAttach } from "react-icons/io";
+import { FaCalendarAlt } from "react-icons/fa";
+import { VscChromeClose } from "react-icons/vsc";
 
 // import { useModalContext } from '@/app/ModalContext';
 import "../../app/fonts.css";
@@ -13,14 +16,14 @@ const BookCall = () => {
 
     //context api
   // const {modal, setModal} =  useModalContext()
-  // const router = useRouter();
+  const router = useRouter();
   return (
       <div className='z-50' style={{zIndex: '9999'}}>
          {modal && 
       <div className="md:w-[95%] bg-white fixed md:top-[1rem] px-4 py-6 md:py-[5rem] md:px-8 flex flex-col md:flex-row justify-between gap-5 md:gap-[7rem] overflow-y-visible">
         {/* left side */}
         <div className="flex flex-col gap-3 md:gap-7 md:w-[35%] pt-12">
-          <h1 className="text-[27px] md:text-[3rem] text-blue-500 md:mb-4 tracking-wider">Let's Start</h1>
+          <h1 className="text-[27px] md:text-[3rem] text-blue-500 md:mb-4 tracking-wider">Lets Start</h1>
           {/* image side */}
           <div className="hidden md:flex gap-3">
            
