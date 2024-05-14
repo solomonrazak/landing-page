@@ -12,6 +12,7 @@ const Navbar = () => {
   const handleBookCallToggle = () => {
     setBookCallVisible((prevState) => !prevState);
     console.log(bookCallVisible);
+    setShownav(false);
   };
 
   const handleBookCallClose = () => {
@@ -114,8 +115,11 @@ const Navbar = () => {
               <Link href="">Contact Us</Link>
             </li>
           </ul>
-          <button className="bg-gradient-to-r mx-auto my-4 from-violet-400 font-semibold text-2xl to-pink-500 px-8  w-[80%] lg:w-[12rem] py-3 md:py-5 text-white md:text-xl rounded-md">
-            Call to Book
+          <button
+            className="bg-gradient-to-r mx-auto my-4 from-violet-400 font-semibold text-2xl to-pink-500 px-8  w-[80%] lg:w-[12rem] py-3 md:py-5 text-white md:text-xl rounded-md"
+            onClick={handleBookCallToggle}
+          >
+            Get in Touch
           </button>
         </div>
       )}
