@@ -17,9 +17,9 @@ const BookCall = ({ onClose }) => {
   // const {modal, setModal} =  useModalContext()
   const router = useRouter();
   return (
-    <div className="absolute top-20 left-0 md:left-10 ">
+    <div className="absolute top-20 left-0 md:left-10 overflow-hidden">
       {modal && (
-        <div className="md:w-[95%] bg-white fixed md:top-[1rem] px-4 py-6 md:py-[5rem] md:px-8 flex flex-col md:flex-row justify-between gap-5 md:gap-[7rem] overflow-y-visible">
+        <div className="max-h-[80vh] overflow-y-auto md:w-[95%] bg-white fixed md:top-[1rem] px-4 py-6 md:py-[5rem] md:px-8 flex flex-col md:flex-row justify-between gap-5 md:gap-[7rem]">
           {/* left side */}
           <div className="flex flex-col gap-3 md:gap-7 md:w-[35%] pt-12">
             <h1 className="text-[27px] md:text-[3rem] text-blue-500 md:mb-4 tracking-wider">

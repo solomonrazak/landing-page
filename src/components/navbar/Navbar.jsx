@@ -55,7 +55,7 @@ const Navbar = () => {
         } transition duration-300`}
       >
         <div className="flex gap-9 items-center">
-          <h1 className="text-[20px] tracking-widest">TECH BROS</h1>
+          <h1 className="text-[20px] tracking-widest">SUPER SIMPLE</h1>
           <div className="hidden md:block">
             <ul className="flex gap-8">
               <li>
