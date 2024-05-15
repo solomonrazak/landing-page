@@ -9,7 +9,7 @@ function Testimonial() {
   const testimonials = [
     {
       quote:
-        "Superhuman is a key tool in our tech stack that everyone gets onboarded to when they join the team. ",
+        "Our experience with [Your Company Name] was amazing! They made our software dreams a reality with their friendly team and top-notch support. Highly recommend. ",
       name: "Shekar Kumar",
       role: "CEO and Manager",
       buttonName: "deal",
@@ -17,7 +17,7 @@ function Testimonial() {
     },
     {
       quote:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "I never knew software could be this simple! [Your Company Name] nailed it with their user-friendly solutions. Big thanks to their team for the smooth experience.",
       name: "John Doe",
       role: "CTO",
       buttonName: "code",
@@ -25,7 +25,7 @@ function Testimonial() {
     },
     {
       quote:
-        "Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.",
+        "If you need software that just works, go with [Your Company Name]. They're like the friendly neighborhood tech geniuses you've always wanted. 10/10 recommend!",
       name: "Jane Doe",
       role: "COO",
       buttonName: "gem",
