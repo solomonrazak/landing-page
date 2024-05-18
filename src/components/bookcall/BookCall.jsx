@@ -6,6 +6,8 @@ import { useRouter } from "next/navigation";
 import { IoMdAttach } from "react-icons/io";
 import { FaCalendarAlt } from "react-icons/fa";
 import { VscChromeClose } from "react-icons/vsc";
+import Script from "next/script";
+
 
 // import { useModalContext } from '@/app/ModalContext';
 import "../../app/fonts.css";
@@ -16,10 +18,33 @@ const BookCall = ({ onClose }) => {
   //context api
   // const {modal, setModal} =  useModalContext()
   const router = useRouter();
+
+  // using calendly
+  
+    function openSchedule(){
+      window.Calendly.initPopupWidget({
+        url: 'https://calendly.com/solomonrazak99'
+        
+       
+      });
+      return false;
+    }
+ 
+  
   return (
+    <>
+    <Script
+        src="https://assets.calendly.com/assets/external/widget.js"
+        type="text/javascript"
+        async
+      />
+      <link
+        href="https://assets.calendly.com/assets/external/widget.css"
+        rel="stylesheet"
+      />
     <div className="absolute top-20 left-0 md:left-10 overflow-hidden">
       {modal && (
-        <div className="max-h-[80vh] overflow-y-auto md:w-[95%] bg-white fixed md:top-[1rem] px-4 py-6 md:py-[5rem] md:px-8 flex flex-col md:flex-row justify-between gap-5 md:gap-[7rem]">
+        <div className="max-h-[80vh] overflow-y-auto md:w-[95%] bg-white fixed md:top-[1rem] px-4 py-6 md:py-[5rem] md:px-8 flex flex-col md:flex-row justify-between gap-5 md:gap-[7rem] ">
           {/* left side */}
           <div className="flex flex-col gap-3 md:gap-7 md:w-[35%] pt-12">
             <h1 className="text-[27px] md:text-[3rem] text-blue-500 md:mb-4 tracking-wider">
@@ -153,21 +178,22 @@ const BookCall = ({ onClose }) => {
                     alt=""
                   />
                 </div>
-                <div>
-                  <p className="text-[15px] font-medium">Solomon Razak</p>
+                <div className="flex flex-col">
+                  <p className="text-[15px] font-medium text-black">Solomon Razak</p>
                   <p className="font-light text-[11px] text-gray-600">
                     Account Executive
                   </p>
                 </div>
               </div>
-              <button className="flex items-center gap-3 bg-white px-9 py-3 border-2 border-red-400 text-red-400 cursor-pointer hover:bg-red-400 hover:text-white">
-                <FaCalendarAlt /> Book a consultation
+              <button className="flex items-center gap-3 bg-white px-9 py-3 border-2 border-red-400 text-red-400 text-[18px] cursor-pointer hover:bg-red-400 hover:text-white justify-center md:px-7" onClick={openSchedule}>
+                <FaCalendarAlt /> Book a Consultation
               </button>
             </div>
           </div>
         </div>
       )}
     </div>
+    </>
   );
 };
 
