@@ -19,7 +19,7 @@ const BookCall = ({ onClose }) => {
   // const {modal, setModal} =  useModalContext()
   const router = useRouter();
 
-  // using calendly
+  // calendly api 
   
     function openSchedule(){
       window.Calendly.initPopupWidget({
