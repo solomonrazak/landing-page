@@ -5,6 +5,7 @@ import { IoMdMenu } from "react-icons/io";
 import BookCall from "../bookcall/BookCall";
 import { SlArrowDown } from "react-icons/sl";
 import About from "../about/About";
+import { MdOutlineEmail } from "react-icons/md";
 
 
 const Navbar = () => {
@@ -73,7 +74,7 @@ const Navbar = () => {
                 setArrowRotate(false);
               }} 
               >
-                <Link href=""><div className="flex items-center gap-2">About<SlArrowDown className={`transition ease-in-out duration-300 text-[13px] ${arrowRotate ? 'rotate-180' : ''}`}/></div></Link>
+                <Link href="/about"><div className="flex items-center gap-2">About<SlArrowDown className={`transition ease-in-out duration-300 text-[13px] ${arrowRotate ? 'rotate-180' : ''}`}/></div></Link>
               </li>
               <li>
                 <Link href="">Projects</Link>
@@ -98,7 +99,10 @@ const Navbar = () => {
 
         <div className="flex items-center relative">
           {/* mobile view */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center gap-8">
+            <div className="bg-pink-400 p-1 cursor-pointer hover:scale-150 transition-all ease-in-out duration-300 group" onClick={handleBookCallToggle}>
+            <MdOutlineEmail className="text-[25px]"/>
+            </div>
             <button
               className="text-[30px] text-gray-300 mr-3 cursor-pointer"
               onClick={() => setShownav(!shownav)}
@@ -137,12 +141,12 @@ const Navbar = () => {
               <Link href="">Contact Us</Link>
             </li>
           </ul>
-          <button
+          {/* <button
             className="bg-gradient-to-r mx-auto my-4 from-violet-400 font-semibold text-2xl to-pink-500 px-8  w-[80%] lg:w-[12rem] py-3 md:py-5 text-white md:text-xl rounded-md"
             onClick={handleBookCallToggle}
           >
             Get in Touch
-          </button>
+          </button> */}
         </div>
       )}
     </div>
