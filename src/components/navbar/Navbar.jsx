@@ -59,7 +59,7 @@ const Navbar = () => {
           <div className="hidden md:block">
             <ul className="flex gap-8">
               <li>
-                <Link href="">About</Link>
+                <Link href="/Pages/about">About</Link>
               </li>
               <li>
                 <Link href="">Projects</Link>

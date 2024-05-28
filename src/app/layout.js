@@ -3,7 +3,6 @@ import "./globals.css";
 import Footer from "@/components/footer/Footer";
 import Navbar from "@/components/navbar/Navbar";
 
-// import { Modal } from "./ModalContext";
 
 
 
@@ -26,14 +25,14 @@ export default function RootLayout({ children }) {
       <body className={`${inter.className}`}>
 
         {/* <Modal> */}
-       
+
 
         <Navbar />
-        
-        
+
+
         {children}
         <Footer />
-        {/* </Modal> */}
+
       </body>
     </html>
   );
