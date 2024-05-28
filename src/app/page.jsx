@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 import Header from "@/components/header/Header.jsx";
 import Projectpage from "./Pages/Project/page.jsx";
 import Services from "./Pages/services/servicespage.jsx";
-import Testimonial from "@/components/Testimonial.jsx";
+import Testimonial from "@/components/testimonial/Testimonial.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import BookCall from "@/components/bookcall/BookCall.jsx";

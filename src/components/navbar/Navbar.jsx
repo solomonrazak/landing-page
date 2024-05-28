@@ -3,11 +3,16 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { IoMdMenu } from "react-icons/io";
 import BookCall from "../bookcall/BookCall";
+import { SlArrowDown } from "react-icons/sl";
+import About from "../about/About";
+import { MdOutlineEmail } from "react-icons/md";
 
 const Navbar = () => {
   const [shownav, setShownav] = useState(false);
   const [scroll, setScroll] = useState(false);
   const [bookCallVisible, setBookCallVisible] = useState(false);
+  const [aboutModal, setAboutModal] = useState(false);
+  const [arrowRotate, setArrowRotate] = useState(false);
 
   const handleBookCallToggle = () => {
     setBookCallVisible((prevState) => !prevState);
@@ -58,8 +63,26 @@ const Navbar = () => {
           <h1 className="text-[20px] tracking-widest">SUPER SIMPLE</h1>
           <div className="hidden md:block">
             <ul className="flex gap-8">
-              <li>
-                <Link href="/Pages/about">About</Link>
+              <li
+                onMouseEnter={() => {
+                  setAboutModal(true);
+                  setArrowRotate(true);
+                }}
+                onMouseLeave={() => {
+                  setAboutModal(false);
+                  setArrowRotate(false);
+                }}
+              >
+                <Link href="/Pages/about">
+                  <div className="flex items-center gap-2">
+                    About
+                    <SlArrowDown
+                      className={`transition ease-in-out duration-300 text-[13px] ${
+                        arrowRotate ? "rotate-180" : ""
+                      }`}
+                    />
+                  </div>
+                </Link>
               </li>
               <li>
                 <Link href="">Projects</Link>
@@ -71,12 +94,32 @@ const Navbar = () => {
                 <Link href="">Contact Us</Link>
               </li>
             </ul>
+            {aboutModal && (
+              <div
+                onMouseEnter={() => {
+                  setAboutModal(true);
+                  setArrowRotate(true);
+                }}
+                onMouseLeave={() => {
+                  setAboutModal(false);
+                  setArrowRotate(false);
+                }}
+              >
+                <About />
+              </div>
+            )}
           </div>
         </div>
 
         <div className="flex items-center relative">
           {/* mobile view */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center gap-8">
+            <div
+              className="bg-pink-400 p-1 cursor-pointer hover:scale-150 transition-all ease-in-out duration-300 group"
+              onClick={handleBookCallToggle}
+            >
+              <MdOutlineEmail className="text-[25px]" />
+            </div>
             <button
               className="text-[30px] text-gray-300 mr-3 cursor-pointer"
               onClick={() => setShownav(!shownav)}
@@ -115,12 +158,12 @@ const Navbar = () => {
               <Link href="">Contact Us</Link>
             </li>
           </ul>
-          <button
+          {/* <button
             className="bg-gradient-to-r mx-auto my-4 from-violet-400 font-semibold text-2xl to-pink-500 px-8  w-[80%] lg:w-[12rem] py-3 md:py-5 text-white md:text-xl rounded-md"
             onClick={handleBookCallToggle}
           >
             Get in Touch
-          </button>
+          </button> */}
         </div>
       )}
     </div>
