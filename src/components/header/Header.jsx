@@ -43,7 +43,7 @@ const Header = () => {
 
       <div
         data-aos="fade-up"
-        className="relative bg-black py-[7%] w-screen pt-20 "
+        className="relative bg-black w-screen pt-20 "
         style={{
           background:
             "radial-gradient(44.48% 44.48% at 10% 50%, rgba(176, 117, 248, 0.18) 0%, rgba(250, 117, 248, 0) 100%)",

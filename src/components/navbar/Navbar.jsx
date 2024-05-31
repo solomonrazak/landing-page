@@ -6,6 +6,7 @@ import BookCall from "../bookcall/BookCall";
 import { SlArrowDown } from "react-icons/sl";
 import About from "../about/About";
 import { MdOutlineEmail } from "react-icons/md";
+import Logo from "../companyLogo/Logo";
 
 const Navbar = () => {
   const [shownav, setShownav] = useState(false);
@@ -60,7 +61,7 @@ const Navbar = () => {
         } transition duration-300`}
       >
         <div className="flex gap-9 items-center">
-          <h1 className="text-[20px] tracking-widest">SUPER SIMPLE</h1>
+          <Logo />
           <div className="hidden md:block">
             <ul className="flex gap-8">
               <li
