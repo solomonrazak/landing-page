@@ -9,7 +9,7 @@ function Testimonial() {
   const testimonials = [
     {
       quote:
-        "Our experience with [Your Company Name] was amazing! They made our software dreams a reality with their friendly team and top-notch support. Highly recommend. ",
+        "Our experience with 'SuperSimple' was amazing! They made our software dreams a reality with their friendly team and top-notch support. Highly recommend. ",
       name: "Shekar Kumar",
       role: "CEO and Manager",
       buttonName: "deal",
@@ -17,7 +17,7 @@ function Testimonial() {
     },
     {
       quote:
-        "I never knew software could be this simple! [Your Company Name] nailed it with their user-friendly solutions. Big thanks to their team for the smooth experience.",
+        "I never knew software could be this simple! 'SuperSimple' nailed it with their user-friendly solutions. Big thanks to their team for the smooth experience.",
       name: "John Doe",
       role: "CTO",
       buttonName: "code",
@@ -25,7 +25,7 @@ function Testimonial() {
     },
     {
       quote:
-        "If you need software that just works, go with [Your Company Name]. They're like the friendly neighborhood tech geniuses you've always wanted. 10/10 recommend!",
+        "If you need software that just works, go with 'SuperSimple'. They're like the friendly neighborhood tech geniuses you've always wanted. 10/10 recommend!",
       name: "Jane Doe",
       role: "COO",
       buttonName: "gem",
