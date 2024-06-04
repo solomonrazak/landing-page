@@ -61,7 +61,9 @@ const Navbar = () => {
         } transition duration-300`}
       >
         <div className="flex gap-9 items-center">
-          <Logo />
+          <Link href="/">
+            <Logo />
+          </Link>
           <div className="hidden md:block">
             <ul className="flex gap-8">
               <li
