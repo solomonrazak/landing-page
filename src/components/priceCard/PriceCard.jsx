@@ -1,6 +1,6 @@
 "use client";
 import React, { useRef, useEffect } from "react";
-import "./PriceCard.css";
+import "./priceCard.css";
 
 function PriceCard({ label, price, description, features }) {
   const cardRef = useRef(null);
