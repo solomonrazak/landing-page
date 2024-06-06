@@ -3,7 +3,7 @@ import Team from '@/components/team/Team'
 
 const page = () => {
   return (
-    <div className="bg-black w-full p-3">
+    <div className="bg-black w-full">
         <Team />
     </div>
   )
