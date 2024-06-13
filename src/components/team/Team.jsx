@@ -4,6 +4,11 @@ import Image from "next/image";
 import SliderImage from "../SliderImage";
 import Scrum from "../customfeatures/Scrum";
 import Kanban from "../customfeatures/Kanban";
+import { FaFileSignature } from "react-icons/fa6";
+import { FaPenRuler } from "react-icons/fa6";
+import { MdOutlineSettingsApplications } from "react-icons/md";
+import { FaTools } from "react-icons/fa";
+import { FaPeopleRoof } from "react-icons/fa6";
 
 const Team = () => {
   const [activeTab, setActiveTab] = useState("scrum");
@@ -204,7 +209,38 @@ const Team = () => {
             {renderActiveComponent()}
           </div>
         </div>
+
+        
       </div>
+      <div className="bg-slate-900 w-full py-12 ">
+        <h1 className="text-2xl md:text-[2.8rem] text-white text-center mb-12 md:pb-8 ">Custom Software Development <span className="text-blue-500">Services</span></h1>
+        <div className="flex justify-center gap-6 md:gap-24 px-8">
+            <div className="text-gray-600 flex flex-col items-center gap-2 ">
+            <FaFileSignature className="md:text-[60px] text-[30px]"/>
+            <p className="md:text-[17px] font-medium text-center">Discovery</p>
+            </div>
+            <div className="text-gray-600 flex flex-col items-center gap-1">
+            <FaPenRuler className="md:text-[60px] text-[30px]"/>
+            <p className="md:text-[17px] font-medium text-center">UI/UX Design</p>
+            </div>
+            <div className="text-gray-600 flex flex-col items-center gap-1">
+            <MdOutlineSettingsApplications className="md:text-[60px] text-[30px]"/>
+            <p className="md:text-[17px] font-medium text-center">Software Development</p>
+            </div>
+            <div className="text-gray-600 flex flex-col items-center gap-1">
+            <FaTools className="md:text-[60px] text-[30px]"/>
+            <p className="md:text-[17px] font-medium text-center">QA & Testing</p>
+            </div>
+            <div className="text-gray-600 flex flex-col items-center gap-1">
+            <FaPeopleRoof className="md:text-[60px] text-[30px]"/>
+            <p className="md:text-[17px] font-medium text-center">Staff Augmentation</p>
+            </div>
+
+        </div>
+       </div>
+
+       
+
     </div>
   );
 };
