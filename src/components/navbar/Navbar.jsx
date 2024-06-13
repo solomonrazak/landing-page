@@ -54,9 +54,9 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="w-screen">
+    <div className="w-screen ">
       <div
-        className={`w-full px-[5%] flex justify-between text-white top-0 py-5 items-center fixed z-10 ${
+        className={`w-full px-4 flex justify-between text-white top-0 py-5 items-center fixed z-10 ${
           scroll ? "bg-black" : "bg-transparent"
         } transition duration-300`}
       >
@@ -76,16 +76,14 @@ const Navbar = () => {
                   setArrowRotate(false);
                 }}
               >
-                <Link href="/Pages/about">
-                  <div className="flex items-center gap-2">
-                    About
-                    <SlArrowDown
-                      className={`transition ease-in-out duration-300 text-[13px] ${
-                        arrowRotate ? "rotate-180" : ""
-                      }`}
-                    />
-                  </div>
-                </Link>
+                <div className="flex items-center gap-2 cursor-pointer">
+                  About
+                  <SlArrowDown
+                    className={`transition ease-in-out duration-300 text-[13px] ${
+                      arrowRotate ? "rotate-180" : ""
+                    }`}
+                  />
+                </div>
               </li>
               <li>
                 <Link href="">Projects</Link>
@@ -146,7 +144,7 @@ const Navbar = () => {
       {/* mobile nav */}
 
       {shownav && (
-        <div className="md:hidden fixed z-50 bg-black top-16  w-full    flex flex-col justify-around py-2">
+        <div className="md:hidden fixed z-30 bg-black top-16  w-full    flex flex-col justify-around py-2">
           <ul className="text-white text-center flex flex-col gap-2  text-2xl font-semibold">
             <li className="hover:bg-gradient-to-r from-violet-400 to-pink-500 tracking-wider mt-[-8px] py-2">
               <Link href="">About</Link>

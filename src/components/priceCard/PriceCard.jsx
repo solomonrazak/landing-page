@@ -21,12 +21,12 @@ function PriceCard({ label, price, description, features }) {
 
     const handleMouseEnter = () => {
       card.classList.add("glow");
-      ripple.style.opacity = 1;
+      ripple.style.scale = 1;
     };
 
     const handleMouseLeave = () => {
       card.classList.remove("glow");
-      ripple.style.opacity = 0;
+      ripple.style.scale = 0;
     };
 
     card.addEventListener("mousemove", handleMouseMove);
@@ -43,11 +43,12 @@ function PriceCard({ label, price, description, features }) {
   return (
     <div
       ref={cardRef}
-      className="relative text-white border-2 px-4 w-72 rounded-xl m-4 overflow-hidden transition-all duration-300"
+      className="pricediv relative text-white border-2 px-4 w-72 rounded-xl m-4 overflow-hidden transition-all duration-300"
     >
+      {/* <div className="circle w-20 h-20  bg-white rounded-full"></div> */}
       <div
         ref={rippleRef}
-        className="absolute bg-blue-500 rounded-full pointer-events-none ripple-effect transition-opacity duration-300"
+        className="absolute bg-blue-500 rounded-full pointer-events-none ripple-effect transition-scale duration-300"
       ></div>
       <p className="mt-3 text-slate-400">{label}</p>
       <p className="my-6 text-3xl font-medium">

@@ -1,0 +1,17 @@
+#loadingboxmain {
+    box-shadow: 16px 16px 36px #050707,
+        -16px -16px 36px #131919;
+}
+
+.loader-head {
+
+    text-shadow:
+        -1px -1px 0 #0000ff,
+        /* top left */
+        1px -1px 0 #0000ff,
+        /* top right */
+        -1px 1px 0 #0000ff,
+        /* bottom left */
+        1px 1px 0 #0000ff;
+    /* bottom right */
+}

@@ -8,6 +8,7 @@ import Testimonial from "@/components/testimonial/Testimonial.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import BookCall from "@/components/bookcall/BookCall.jsx";
+import Loader from "@/components/loader/Loader.jsx";
 
 export default function Home() {
   useEffect(() => {
@@ -18,10 +19,13 @@ export default function Home() {
   }, []);
   return (
     <main className="overflow-x-hidden" style={{ fontFamily: "adelle" }}>
-      <Header />
-      <Projectpage />
-      <Services />
-      <Testimonial />
+      <div className="body hidden overflow-y-hidden">
+        <Header />
+        <Projectpage />
+        <Services />
+        <Testimonial />
+      </div>
+      <Loader />
     </main>
   );
 }

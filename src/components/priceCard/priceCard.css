@@ -5,10 +5,10 @@
     position: absolute;
     transform: translate(-50%, -50%);
     background: rgba(220, 251, 174, 0.3);
-    transition: transform 0.2s, opacity 0.3s;
+    transition: transform 0.2s, scale 0.3s;
     pointer-events: none;
     will-change: transform, opacity;
-    opacity: 0;
+    scale: 0;
     /* Initially hidden */
 }
 
