@@ -11,7 +11,7 @@ const About = () => {
           <p className="text-[12px] font-normal mb-6">ABOUT US</p>
           <div className="flex flex-col text-[13px] font-medium gap-3">
             <Link href="/Pages/team">
-               <p className="cursor-pointer hover:text-red-500">Team</p>
+              <p className="cursor-pointer hover:text-red-500">Team</p>
             </Link>
             <p className="cursor-pointer hover:text-red-500">Testimonials</p>
             <Link href="/Pages/howWeWork">
