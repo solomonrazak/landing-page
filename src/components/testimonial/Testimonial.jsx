@@ -47,7 +47,7 @@ function Testimonial() {
   }, []);
 
   return (
-    <div className="text-white mx-10 lg:mx-40 md:my-10 my-10">
+    <div className="text-white mx-10 lg:mx-40 md:my-10 my-10 ">
       <div className="flex-col">
         <div>
           <img
