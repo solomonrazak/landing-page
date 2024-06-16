@@ -1,22 +1,115 @@
+"use client";
+import { useEffect, useRef } from "react";
 import "./projectspage.css";
 import Image from "next/image";
 
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/all";
+
+gsap.registerPlugin(ScrollTrigger);
+
 function Projectpage() {
+  const projectRef = useRef();
+  const petRef = useRef();
+  const bidRef = useRef();
+  const leaseRef = useRef();
+  const nickRef = useRef();
+
+  useGSAP(() => {
+    const tl = gsap.timeline();
+
+    tl.to(projectRef.current, {
+      scale: 1,
+      scrollTrigger: {
+        trigger: projectRef.current,
+        start: "top 10%",
+        end: "top -200%",
+        scrub: 2,
+
+        pin: true,
+      },
+    });
+
+    tl.to(petRef.current, {
+      opacity: 0,
+      scrollTrigger: {
+        trigger: petRef.current,
+        start: "top -20%",
+        end: "top -30%",
+        scrub: 1,
+      },
+    });
+    tl.to(bidRef.current, {
+      opacity: 1,
+      scrollTrigger: {
+        trigger: bidRef.current,
+        start: "top -30%",
+        end: "top -40%",
+        scrub: 1,
+      },
+    });
+    tl.to(bidRef.current, {
+      opacity: 0,
+      duration: 0.5,
+      scrollTrigger: {
+        trigger: bidRef.current,
+        start: "top -100%",
+        end: "top -110%",
+        scrub: 1,
+      },
+    });
+    tl.to(leaseRef.current, {
+      opacity: 1,
+      scrollTrigger: {
+        trigger: leaseRef.current,
+        start: "top -110%",
+        end: "top -111%",
+        scrub: 1,
+      },
+    });
+    tl.to(leaseRef.current, {
+      opacity: 0,
+      scrollTrigger: {
+        trigger: leaseRef.current,
+        start: "top -170%",
+        end: "top -180%",
+        scrub: 1,
+      },
+    });
+    tl.to(nickRef.current, {
+      opacity: 1,
+      scrollTrigger: {
+        trigger: nickRef.current,
+        start: "top -170%",
+        end: "top -180%",
+        scrub: 1,
+      },
+    });
+  });
+
   return (
     <div
-      className="mx-4 mt-10 sm:mx-40 md:mx-20 text-gray-200 md:mt-10 md:pb-[10rem]"
-      data-aos="fade-down"
+      ref={projectRef}
+      id="project"
+      className="mx-4 mt-10 sm:mx-40 md:mx-20 text-gray-200 md:mt-10 md:pb-[10rem]  "
+      // data-aos="fade-down"
     >
-      <p className="md:text-center mx-4 text-3xl font-bold lg:text-5xl pb-3">
+      <p className="md:text-center pr-20 mx-4 text-3xl font-bold lg:text-5xl pb-3">
         Projects
       </p>
       <p className="md:text-center mt-2 mx-4 text-lg lg:text-2xl md:mx-40 md:mb-[-30px]">
         Awesome Projects made by our developers
       </p>
 
-      <div className="flex flex-col mx-4 md:mt-20 md:px-[5%]">
-        <div className="mt-20 flex flex-col md:flex-row md:justify-between md:gap-4 ">
-          <div className="md:w-1/2" data-aos="fade-up">
+      <div className="flex flex-col mx-4 md:pr-20 md:px-[5%] relative">
+        <div
+          ref={petRef}
+          className="pet mt-20 flex flex-col md:flex-row md:justify-between md:gap-4 opacity-1 md:mr-20"
+        >
+          {/* <div className="md:w-1/2" data-aos="fade-up"> */}
+
+          <div className="md:w-1/2">
             <p className="text-2xl lg:text-4xl font-semibold">PetCare</p>
             <p className="my-8 text-lg lg:text-xl">
               Welcome to Pet Care, your premier destination for all things pets!
@@ -35,7 +128,8 @@ function Projectpage() {
             </a>
           </div>
 
-          <div className="relative" data-aos="zoom-in">
+          {/* <div className="relative" data-aos="zoom-in"> */}
+          <div className="relative">
             <Image
               className="object-cover h-[12rem] md:h-[100%] lg:h-[140%] mx-auto"
               src="/images/Projectt.JPG"
@@ -47,9 +141,11 @@ function Projectpage() {
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black lg:h-[140%]"></div>
           </div>
         </div>
-
-        <div className="mt-20 md:mt-60 flex flex-col md:flex-row-reverse md:justify-between md:gap-4">
-          <div className="md:w-1/2" data-aos="fade-up">
+        <div
+          ref={bidRef}
+          className="mt-20 md:mt-20 flex flex-col md:flex-row md:justify-between md:gap-4  absolute  opacity-0 md:pr-40"
+        >
+          <div className="md:w-1/2">
             <p className="text-2xl lg:text-4xl font-semibold">Bid-Bazar</p>
             <p className="my-8 text-lg lg:text-xl">
               A platform where buyers and sellers can congregate for the purpose
@@ -66,7 +162,7 @@ function Projectpage() {
             </a>
           </div>
 
-          <div className="mt-4 relative" data-aos="zoom-in">
+          <div className="mt-4 relative">
             <Image
               className="object-cover h-[12rem] md:h-[100%] lg:h-[140%] mx-auto"
               src="/images/Prabhat_Website.JPG"
@@ -78,9 +174,11 @@ function Projectpage() {
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black lg:h-[140%]"></div>
           </div>
         </div>
-
-        <div className="mt-20 md:mt-60 flex flex-col md:flex-row md:justify-between md:gap-4">
-          <div className="md:w-1/2" data-aos="fade-up">
+        <div
+          ref={leaseRef}
+          className="mt-20 md:mt-20 flex flex-col md:flex-row md:justify-between md:gap-4 absolute opacity-0 md:pr-40"
+        >
+          <div className="md:w-1/2">
             <p className="text-2xl lg:text-4xl font-semibold">LeashPay</p>
             <p className="my-8 text-lg lg:text-xl">
               Regardless of the size of your business, LeashPay offers
@@ -98,7 +196,7 @@ function Projectpage() {
             </a>
           </div>
 
-          <div className="relative" data-aos="zoom-in">
+          <div className="relative">
             <Image
               className="object-cover h-[12rem] md:h-[100%] lg:h-[140%] mx-auto"
               src="/images/Zack_website.JPG"
@@ -110,9 +208,11 @@ function Projectpage() {
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black lg:h-[140%]"></div>
           </div>
         </div>
-
-        <div className="mt-20 md:mt-60 flex flex-col md:flex-row-reverse md:justify-between md:gap-4">
-          <div className="md:w-1/2" data-aos="fade-up">
+        <div
+          ref={nickRef}
+          className="mt-20 md:mt-20 flex flex-col md:flex-row md:justify-between md:gap-4 absolute opacity-0 md:pr-40"
+        >
+          <div className="md:w-1/2">
             <p className="text-2xl lg:text-4xl font-semibold">Nike Store</p>
             <p className="my-8 text-lg lg:text-xl">
               This is a full fledged Nike store that helps the consumer to buy
@@ -131,7 +231,7 @@ function Projectpage() {
 
           <div
             className="mt-4 relative"
-            data-aos="zoom-in"
+            // data-aos="zoom-in"
             data-aos-anchor-placement="bottom-bottom"
           >
             <Image
