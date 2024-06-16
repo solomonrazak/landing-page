@@ -37,6 +37,7 @@ function Projectpage() {
         trigger: petRef.current,
         start: "top -20%",
         end: "top -30%",
+        ease: "power1.out",
         scrub: 1,
       },
     });
@@ -46,6 +47,7 @@ function Projectpage() {
         trigger: bidRef.current,
         start: "top -30%",
         end: "top -40%",
+        ease: "power1.out",
         scrub: 1,
       },
     });
@@ -56,6 +58,7 @@ function Projectpage() {
         trigger: bidRef.current,
         start: "top -100%",
         end: "top -110%",
+        ease: "power1.out",
         scrub: 1,
       },
     });
@@ -65,6 +68,7 @@ function Projectpage() {
         trigger: leaseRef.current,
         start: "top -110%",
         end: "top -111%",
+        ease: "power1.out",
         scrub: 1,
       },
     });
@@ -74,6 +78,7 @@ function Projectpage() {
         trigger: leaseRef.current,
         start: "top -170%",
         end: "top -180%",
+        ease: "power1.out",
         scrub: 1,
       },
     });
@@ -83,6 +88,7 @@ function Projectpage() {
         trigger: nickRef.current,
         start: "top -170%",
         end: "top -180%",
+        ease: "power1.out",
         scrub: 1,
       },
     });
@@ -92,7 +98,7 @@ function Projectpage() {
     <div
       ref={projectRef}
       id="project"
-      className="mx-4 mt-10 sm:mx-40 md:mx-20 text-gray-200 md:mt-10 md:pb-[10rem]  "
+      className="mx-4 mt-10 sm:mx-40 md:mx-20 text-gray-200 md:mt-10 md:pb-[10rem] "
       // data-aos="fade-down"
     >
       <p className="md:text-center pr-20 mx-4 text-3xl font-bold lg:text-5xl pb-3">
@@ -105,9 +111,15 @@ function Projectpage() {
       <div className="flex flex-col mx-4 md:pr-20 md:px-[5%] relative">
         <div
           ref={petRef}
-          className="pet mt-20 flex flex-col md:flex-row md:justify-between md:gap-4 opacity-1 md:mr-20"
+          className="pet mt-20 flex flex-col md:flex-row md:justify-between md:gap-4 opacity-1 md:mr-20 "
         >
-          {/* <div className="md:w-1/2" data-aos="fade-up"> */}
+          <div
+            className="absolute -top-[10rem] -left-[20rem] w-screen h-screen"
+            style={{
+              background:
+                "radial-gradient(44.48% 44.48% at 50% 63%, rgba(191, 64, 191, 0.15) 0%, rgba(191, 64, 191, 0) 80%)",
+            }}
+          ></div>
 
           <div className="md:w-1/2">
             <p className="text-2xl lg:text-4xl font-semibold">PetCare</p>
@@ -131,14 +143,14 @@ function Projectpage() {
           {/* <div className="relative" data-aos="zoom-in"> */}
           <div className="relative">
             <Image
-              className="object-cover h-[12rem] md:h-[100%] lg:h-[140%] mx-auto"
+              className="object-cover h-[12rem] md:h-[100%] lg:h-[100%] mx-auto"
               src="/images/Projectt.JPG"
               alt=""
               priority={true}
               width={500}
               height={500}
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black lg:h-[140%]"></div>
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black lg:h-[105%]"></div>
           </div>
         </div>
         <div
@@ -146,6 +158,13 @@ function Projectpage() {
           className="mt-20 md:mt-20 flex flex-col md:flex-row md:justify-between md:gap-4  absolute  opacity-0 md:pr-40"
         >
           <div className="md:w-1/2">
+            <div
+              className="absolute -top-[35rem] left-[20rem] w-screen h-screen"
+              style={{
+                background:
+                  "radial-gradient(44.48% 44.48% at 50% 63%, rgba(255, 255, 0, 0.15) 0%, rgba(255, 255, 0, 0) 80%)",
+              }}
+            ></div>
             <p className="text-2xl lg:text-4xl font-semibold">Bid-Bazar</p>
             <p className="my-8 text-lg lg:text-xl">
               A platform where buyers and sellers can congregate for the purpose
@@ -178,6 +197,13 @@ function Projectpage() {
           ref={leaseRef}
           className="mt-20 md:mt-20 flex flex-col md:flex-row md:justify-between md:gap-4 absolute opacity-0 md:pr-40"
         >
+          <div
+            className="absolute -top-[30rem] -left-[45rem] w-screen h-screen"
+            style={{
+              background:
+                "radial-gradient(44.48% 44.48% at 50% 63%, rgba(255, 165, 0, 0.15) 0%, rgba(255, 165, 0, 0) 80%)",
+            }}
+          ></div>
           <div className="md:w-1/2">
             <p className="text-2xl lg:text-4xl font-semibold">LeashPay</p>
             <p className="my-8 text-lg lg:text-xl">
@@ -212,6 +238,13 @@ function Projectpage() {
           ref={nickRef}
           className="mt-20 md:mt-20 flex flex-col md:flex-row md:justify-between md:gap-4 absolute opacity-0 md:pr-40"
         >
+          <div
+            className="absolute -top-[10rem] -left-[50rem] w-screen h-screen"
+            style={{
+              background:
+                "radial-gradient(44.48% 44.48% at 50% 63%, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 80%)",
+            }}
+          ></div>
           <div className="md:w-1/2">
             <p className="text-2xl lg:text-4xl font-semibold">Nike Store</p>
             <p className="my-8 text-lg lg:text-xl">
