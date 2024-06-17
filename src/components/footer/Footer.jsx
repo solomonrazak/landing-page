@@ -4,7 +4,7 @@ import Logo from "../companyLogo/Logo";
 const Footer = () => {
   return (
     <div
-      className="bg-black w-screen bottom-0 "
+      className=" w-screen bottom-0 "
       data-aos=""
       style={{ fontFamily: "adelle" }}
     >
