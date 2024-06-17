@@ -68,7 +68,7 @@ const uiuxIcon = (
 
 const Services = () => {
   return (
-    <div className="bg-black w-screen     px-6">
+    <div className=" w-screen  px-6">
       <Head>
         <title>Our Services</title>
       </Head>
@@ -79,13 +79,12 @@ const Services = () => {
         Our Services
       </h1>
 
-      <div 
-      style={{
-        background:
-          "radial-gradient(44.48% 44.48% at 50% 63%, rgba(255, 165, 0, 0.15) 0%, rgba(255, 165, 0, 0) 80%)",
-      }}>
-        
-      </div>
+      <div
+        style={{
+          background:
+            "radial-gradient(44.48% 44.48% at 50% 63%, rgba(255, 165, 0, 0.15) 0%, rgba(255, 165, 0, 0) 80%)",
+        }}
+      ></div>
 
       {/* <div className="md:mx-20 lg:mx-40 mb-20">
         <div className="flex flex-col md:flex-row md:gap-10 justify-between ">
