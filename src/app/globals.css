@@ -11,7 +11,10 @@
 
 .testimonial-quote {
   margin-top: 20px;
-  /* Adjust as needed */
   margin-bottom: 10px;
-  /* Adjust as needed */
+
+}
+
+body {
+  overflow-x: hidden;
 }

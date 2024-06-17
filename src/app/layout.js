@@ -22,11 +22,9 @@ export default function RootLayout({ children }) {
         <meta name="description" content={metadata.description} />
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
       </head>
-      <body className={`${inter.className} overflow-x-hidden`}>
+      <body className={`${inter.className} `}>
 
-        {/* <Modal> */}
-
-
+        
         <Navbar />
 
 
