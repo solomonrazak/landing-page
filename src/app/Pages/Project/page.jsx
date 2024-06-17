@@ -150,7 +150,7 @@ function Projectpage() {
               width={500}
               height={500}
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black lg:h-[105%]"></div>
+            <div className="absolute -left-4 inset-0 bg-gradient-to-b from-transparent  to-black w-[105%] h-[105%]"></div>
           </div>
         </div>
         <div
