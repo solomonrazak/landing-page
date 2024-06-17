@@ -8,7 +8,10 @@ function Loader() {
     animationLoader();
   }, []);
   return (
-    <div className="main fixed top-0 w-full h-[100%] z-50 ">
+    <div
+      className="main fixed top-0 w-full h-[100%] z-50 "
+      style={{ fontFamily: "adelle" }}
+    >
       <div className="bg-[#0C1010] absolute top-0 w-full h-[100%]">
         {/* <video
           autoPlay
@@ -24,15 +27,11 @@ function Loader() {
       >
         <div className=" relative w-full h-full">
           <div className="pt-10 px-4 md:pt-20 md:px-20 text-6xl md:text-8xl">
-            <h2 className="loader-head font-extrabold uppercase text-white ">
-              Super Simple
-            </h2>
-            <h2 className="loader-head font-extrabold uppercase text-white  ">
+            <h2 className="loader-head  uppercase text-white ">Super Simple</h2>
+            <h2 className="loader-head  uppercase text-white  ">
               Make you work
             </h2>
-            <h2 className="loader-head font-extrabold uppercase text-white  ">
-              Simple
-            </h2>
+            <h2 className="loader-head uppercase text-white  ">Simple</h2>
           </div>
           <div className="w-full h-10 bg-white absolute bottom-0 rounded-b-lg">
             <div className="loadingmain relative bg-[#090C0C] border-2 border-blue-400 w-0 h-full rounded-b-lg"></div>

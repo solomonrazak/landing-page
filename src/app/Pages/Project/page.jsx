@@ -98,7 +98,7 @@ function Projectpage() {
     <div
       ref={projectRef}
       id="project"
-      className="mx-4 mt-10 sm:mx-40 md:mx-20 text-gray-200 md:mt-10 md:pb-[10rem] "
+      className=" mt-10 sm:mx-40 md:mx-20 text-gray-200 md:mt-10 md:pb-[10rem]"
       // data-aos="fade-down"
     >
       <p className="md:text-center pr-20 mx-4 text-3xl font-bold lg:text-5xl pb-3">
@@ -114,7 +114,7 @@ function Projectpage() {
           className="pet mt-20 flex flex-col md:flex-row md:justify-between md:gap-4 opacity-1 md:mr-20 "
         >
           <div
-            className="absolute -top-[10rem] -left-[20rem] w-screen h-screen"
+            className="absolute hidden md:block  -top-[10rem] -left-[20rem] w-screen h-screen"
             style={{
               background:
                 "radial-gradient(44.48% 44.48% at 50% 63%, rgba(191, 64, 191, 0.15) 0%, rgba(191, 64, 191, 0) 80%)",
@@ -141,7 +141,7 @@ function Projectpage() {
           </div>
 
           {/* <div className="relative" data-aos="zoom-in"> */}
-          <div className="relative">
+          <div className="relative mr-4 border-2">
             <Image
               className="object-cover h-[12rem] md:h-[100%] lg:h-[100%] mx-auto"
               src="/images/Projectt.JPG"
@@ -159,7 +159,7 @@ function Projectpage() {
         >
           <div className="md:w-1/2">
             <div
-              className="absolute -top-[35rem] left-[20rem] w-screen h-screen"
+              className="absolute  hidden md:block  -top-[35rem] left-[20%] w-screen h-screen "
               style={{
                 background:
                   "radial-gradient(44.48% 44.48% at 50% 63%, rgba(255, 255, 0, 0.15) 0%, rgba(255, 255, 0, 0) 80%)",
@@ -239,7 +239,7 @@ function Projectpage() {
           className="mt-20 md:mt-20 flex flex-col md:flex-row md:justify-between md:gap-4 absolute opacity-0 md:pr-40"
         >
           <div
-            className="absolute -top-[10rem] -left-[50rem] w-screen h-screen"
+            className="absolute  -top-[10rem] -left-[50rem] w-screen h-screen"
             style={{
               background:
                 "radial-gradient(44.48% 44.48% at 50% 63%, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 80%)",

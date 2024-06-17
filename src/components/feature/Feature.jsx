@@ -3,9 +3,16 @@ import FeatureCard from "./FeatureCard";
 
 function Feature() {
   return (
-    <div className="w-full py-20 relative ">
+    <div className="w-full py-20 relative overflow-x-hidden">
       <div
-        className="absolute -bottom-[10rem] -right-[40rem] w-screen h-screen"
+        className="absolute -top-60 -right-[28rem] h-full w-screen "
+        style={{
+          background:
+            "radial-gradient(44.48% 44.48% at 50% 63%, rgba(191, 64, 191, 0.15) 0%, rgba(191, 64, 191, 0) 80%)",
+        }}
+      ></div>
+      <div
+        className="absolute bottom-0 -left-[30rem] h-full w-screen "
         style={{
           background:
             "radial-gradient(44.48% 44.48% at 50% 63%, rgba(191, 64, 191, 0.15) 0%, rgba(191, 64, 191, 0) 80%)",
