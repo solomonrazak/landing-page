@@ -9,7 +9,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import BookCall from "@/components/bookcall/BookCall.jsx";
 import Loader from "@/components/loader/Loader.jsx";
-import Feature from "@/components/feature/Feature.jsx";
 
 export default function Home() {
   useEffect(() => {
