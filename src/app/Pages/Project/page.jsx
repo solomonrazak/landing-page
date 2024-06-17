@@ -25,6 +25,7 @@ function Projectpage() {
         trigger: projectRef.current,
         start: "top 10%",
         end: "top -200%",
+        markers: true,
         scrub: 2,
 
         pin: true,

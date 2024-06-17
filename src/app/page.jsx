@@ -18,7 +18,7 @@ export default function Home() {
     });
   }, []);
   return (
-    <main className="" style={{ fontFamily: "adelle" }}>
+    <main className="overflow-x-hidden" style={{ fontFamily: "adelle" }}>
       <div className="body ">
         <Header />
         <Projectpage />
