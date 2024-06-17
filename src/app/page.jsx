@@ -25,7 +25,7 @@ export default function Home() {
         <Services />
         <Testimonial />
       </div>
-      {/* <Loader /> */}
+      <Loader />
     </main>
   );
 }
