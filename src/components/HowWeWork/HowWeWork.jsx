@@ -35,9 +35,9 @@ const HowWeWork = () => {
   ];
 
   return (
-    <div className="min-h-screen  text-white pt-32 px-10 md:px-24">
-      <h1 className="text-center text-4xl md:text-6xl font-medium mb-16 text-slate-200">
-        Our Unique Approach and Services
+    <div className="min-h-screen  text-white pt-32 px-10  lg:px-24">
+      <h1 className="text-center text-2xl md:text-5xl font-medium mb-16 text-slate-200">
+        Flexible and client-oriented engagement models
       </h1>
       <div className="flex flex-col md:flex-row justify-between">
         {sections.map((section, index) => (
@@ -45,7 +45,7 @@ const HowWeWork = () => {
             key={index}
             className="flex-1 mx-4 mb-8 md:mb-0 transform hover:scale-105 transition-transform duration-300"
           >
-            <div className="bg-gray-800 p-6 rounded-lg shadow-lg md:h-96">
+            <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
               {section.icon}
               <h2 className="text-xl md:text-2xl font-semibold mb-4 text-slate-400">
                 {section.title}
