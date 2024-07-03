@@ -13,6 +13,7 @@ import Discovery from "../customfeatures/Discovery";
 import Ux from "../customfeatures/Ux";
 import Software from "../customfeatures/Software";
 import Testing from "../customfeatures/Testing";
+import CompanyProfile from "../companyprofile/CompanyProfile";
 
 const Team = () => {
   const [activeTab, setActiveTab] = useState("scrum");
@@ -255,6 +256,9 @@ const Team = () => {
         <div className="mt-6">
           {renderNewActive()}
         </div>
+       </div>
+       <div>
+        <CompanyProfile />
        </div>
 
        
