@@ -9,9 +9,14 @@ import { FaPenRuler } from "react-icons/fa6";
 import { MdOutlineSettingsApplications } from "react-icons/md";
 import { FaTools } from "react-icons/fa";
 import { FaPeopleRoof } from "react-icons/fa6";
+import Discovery from "../customfeatures/Discovery";
+import Ux from "../customfeatures/Ux";
+import Software from "../customfeatures/Software";
+import Testing from "../customfeatures/Testing";
 
 const Team = () => {
   const [activeTab, setActiveTab] = useState("scrum");
+  const [newActive, setNewActive] = useState("discovery");
 
   const renderActiveComponent = () => {
     switch (activeTab) {
@@ -24,10 +29,24 @@ const Team = () => {
     }
   };
 
+  const renderNewActive = () => {
+    switch(newActive){
+      case "discovery":
+        return <Discovery />;
+      case "ux":
+        return <Ux />;
+      case "software":
+        return <Software />;
+      case "testing":
+        return <Testing />;      
+    }
+
+  }
+
   return (
-    <div className=" mt-10">
+    <div className="mt-16 py-5">
       <div className="flex flex-col text-white gap-8 p-10">
-        <h1 className="text-start md:text-center text-[2rem] md:text-[3rem]">
+        <h1 className="text-start md:text-center text-[2rem] md:text-[3rem] pb-5">
           About <span className="text-blue-400">Super Simple</span>
         </h1>
         <div className="grid grid-cols-3 grid-rows-2 md:grid-cols-6 md:grid-rows-1 gap-8 md:gap-3">
@@ -212,30 +231,29 @@ const Team = () => {
 
         
       </div>
-      <div className="bg-slate-900 w-full py-12 ">
-        <h1 className="text-2xl md:text-[2.8rem] text-white text-center mb-12 md:pb-8 ">Custom Software Development <span className="text-blue-500">Services</span></h1>
-        <div className="flex justify-center gap-6 md:gap-24 px-8">
-            <div className="text-gray-600 flex flex-col items-center gap-2 ">
+      <div className="bg-slate-900 w-full py-12">
+        <h1 className="text-2xl md:text-[2.5rem] text-white text-center mb-12 md:pb-8 ">Custom Software Development <span className="text-blue-500 md:mt-3">Services</span></h1>
+        <div className="flex justify-center gap-6 md:gap-32 px-8">
+            <div className={`flex flex-col items-center gap-2 group cursor-pointer ${newActive === "discovery" ? "text-blue-500" : "text-gray-600"}`} onClick={() => setNewActive("discovery")}>
             <FaFileSignature className="md:text-[60px] text-[30px]"/>
             <p className="md:text-[17px] font-medium text-center">Discovery</p>
             </div>
-            <div className="text-gray-600 flex flex-col items-center gap-1">
+            <div className={`flex flex-col items-center group cursor-pointer gap-1 ${newActive === "ux" ? "text-blue-500":"text-gray-600"}`} onClick={() => setNewActive("ux")}>
             <FaPenRuler className="md:text-[60px] text-[30px]"/>
             <p className="md:text-[17px] font-medium text-center">UI/UX Design</p>
             </div>
-            <div className="text-gray-600 flex flex-col items-center gap-1">
+            <div className={`flex flex-col items-center gap-1 cursor-pointer ${newActive === "software" ? "text-blue-500":"text-gray-600"}`} onClick={() => setNewActive("software")}>
             <MdOutlineSettingsApplications className="md:text-[60px] text-[30px]"/>
             <p className="md:text-[17px] font-medium text-center">Software Development</p>
             </div>
-            <div className="text-gray-600 flex flex-col items-center gap-1">
+            <div className={`flex flex-col items-center gap-1 cursor-pointer ${newActive === "testing" ? "text-blue-500" : "text-gray-600"} `} onClick={() => setNewActive("testing")}>
             <FaTools className="md:text-[60px] text-[30px]"/>
             <p className="md:text-[17px] font-medium text-center">QA & Testing</p>
             </div>
-            <div className="text-gray-600 flex flex-col items-center gap-1">
-            <FaPeopleRoof className="md:text-[60px] text-[30px]"/>
-            <p className="md:text-[17px] font-medium text-center">Staff Augmentation</p>
-            </div>
 
+        </div>
+        <div className="mt-6">
+          {renderNewActive()}
         </div>
        </div>
 
