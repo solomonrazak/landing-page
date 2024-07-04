@@ -2,6 +2,7 @@
 import { useEffect, useRef } from "react";
 import "./projectspage.css";
 import Image from "next/image";
+import Link from "next/link";
 
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -98,13 +99,12 @@ function Projectpage() {
     <div
       ref={projectRef}
       id="project"
-      className=" mt-10 sm:mx-40 md:mx-20 text-gray-200 md:mt-10 md:pb-[10rem]"
-      // data-aos="fade-down"
+      className=" mt-10 sm:mx-40 md:mx-20 text-gray-200 md:mt-10 md:pb-[10rem] "
     >
-      <p className="md:text-center pr-20 mx-4 text-3xl font-bold lg:text-5xl pb-3">
+      <p className="md:text-center px-4 md:pr-20 text-3xl font-bold lg:text-5xl pb-3">
         Projects
       </p>
-      <p className="md:text-center mt-2 mx-4 text-lg lg:text-2xl md:mx-40 md:mb-[-30px]">
+      <p className="md:text-center pr-20 mt-2 mx-4 text-lg lg:text-2xl md:mx-40 md:mb-[30px]">
         Awesome Projects made by our developers
       </p>
 
@@ -113,13 +113,13 @@ function Projectpage() {
           ref={petRef}
           className="pet mt-20 flex flex-col md:flex-row md:justify-between md:gap-4 opacity-1 md:mr-20 "
         >
-          <div
-            className="absolute hidden md:block  -top-[10rem] -left-[20rem] w-screen h-screen"
+          {/* <div
+            className="absolute z-0 hidden md:block  -top-[10rem] -left-[20rem] w-screen h-screen"
             style={{
               background:
                 "radial-gradient(44.48% 44.48% at 50% 63%, rgba(191, 64, 191, 0.15) 0%, rgba(191, 64, 191, 0) 80%)",
             }}
-          ></div>
+          ></div> */}
 
           <div className="md:w-1/2">
             <p className="text-2xl lg:text-4xl font-semibold">PetCare</p>
@@ -129,15 +129,11 @@ function Projectpage() {
               We&apos;re here to celebrate the joy and companionship that our
               furry friends bring.
             </p>
-            <a
-              href="https://petcare-tau.vercel.app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button className="bg-gradient-to-r from-violet-400 to-pink-500 font-semibold  w-[40%] lg:w-[8rem] py-3 my-4 text-white md:text-sm rounded-md">
+            <Link href="/Pages/Project">
+              <div className="bg-gradient-to-r cursor-pointer text-center from-violet-400 to-pink-500 font-semibold   w-[40%] lg:w-[8rem] py-3 my-4 text-white md:text-md rounded-sm">
                 Get Started
-              </button>
-            </a>
+              </div>
+            </Link>
           </div>
 
           {/* <div className="relative" data-aos="zoom-in"> */}
@@ -204,6 +200,7 @@ function Projectpage() {
                 "radial-gradient(44.48% 44.48% at 50% 63%, rgba(255, 165, 0, 0.15) 0%, rgba(255, 165, 0, 0) 80%)",
             }}
           ></div>
+
           <div className="md:w-1/2">
             <p className="text-2xl lg:text-4xl font-semibold">LeashPay</p>
             <p className="my-8 text-lg lg:text-xl">

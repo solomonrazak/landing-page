@@ -89,11 +89,9 @@ const Navbar = () => {
                 <Link href="/Pages/Project">Projects</Link>
               </li>
               <li>
-                <Link href="">Services</Link>
+                <Link href="/Pages/services">Services</Link>
               </li>
-              <li>
-                <Link href="">Contact Us</Link>
-              </li>
+              
             </ul>
             {aboutModal && (
               <div
@@ -131,7 +129,7 @@ const Navbar = () => {
 
           {!bookCallVisible && (
             <button
-              className="bg-pink-400 py-2 px-5 text-[18px] hover:bg-transparent hover:border hover:border-pink-400 hover:text-pink-400 hidden md:block z-10"
+              className="bg-blue-900 py-2 px-5 text-[18px] hover:bg-transparent hover:border hover:border-blue-900 hover:text-blue-900 hidden md:block z-10"
               onClick={handleBookCallToggle}
             >
               Get in Touch
