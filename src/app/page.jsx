@@ -3,12 +3,13 @@
 import React, { useEffect } from "react";
 import Header from "@/components/header/Header.jsx";
 import Projectpage from "./Pages/Project/page.jsx";
-import Services from "./Pages/services/servicespage.jsx";
 import Testimonial from "@/components/testimonial/Testimonial.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import BookCall from "@/components/bookcall/BookCall.jsx";
 import Loader from "@/components/loader/Loader.jsx";
+import Bar from "@/components/simpleAnimationElement/Bar.jsx";
+import Feature from "@/components/feature/Feature.jsx";
 
 export default function Home() {
   useEffect(() => {
@@ -25,7 +26,7 @@ export default function Home() {
       <div className="body ">
         <Header />
         <Projectpage />
-        <Services />
+        <Feature />
         <Testimonial />
       </div>
       <Loader />

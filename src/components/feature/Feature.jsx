@@ -1,9 +1,14 @@
 import React from "react";
 import FeatureCard from "./FeatureCard";
+import Bar from "../simpleAnimationElement/Bar";
+import Element from "../simpleAnimationElement/Element";
 
 function Feature() {
   return (
-    <div className="w-full py-20 relative">
+    <div className="w-full pb-20 relative ">
+      <div className="text-lg text-white">
+        <h1 className="text-5xl mb-10 text-center">Our services</h1>
+      </div>
       <div
         className="absolute hidden md:block -top-64 -right-[35rem] h-full w-screen "
         style={{
@@ -18,7 +23,7 @@ function Feature() {
             "radial-gradient(44.48% 44.48% at 50% 63%, rgba(191, 64, 191, 0.15) 0%, rgba(191, 64, 191, 0) 80%)",
         }}
       ></div>
-      <div className="py-4 md:py-20 flex flex-col md:flex-row items-center justify-center gap-24 md:gap-14 ">
+      <div className="py-4 md:py-20  flex flex-col md:flex-row flex-wrap items-center justify-center gap-24 md:gap-14 ">
         <FeatureCard
           imgSrc="/images/web.png"
           heading="Web"
@@ -34,6 +39,9 @@ function Feature() {
           heading="SEO"
           paragraph="Content related to SEO strategies development."
         />
+      </div>
+      <div className="absolute  hidden md:block   bottom-10  md:bottom-20 right-10 ">
+        <Bar />
       </div>
     </div>
   );

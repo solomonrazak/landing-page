@@ -100,8 +100,8 @@ function Testimonial() {
             {testimonials.map((testimonial, index) => (
               <div className="" key={index}>
                 <button
-                  className={`px-4 py-2 md:text-4xl font-semibold rounded-md border-2  border-gray-500 ${
-                    index === activeButton ? "bg-gray-600" : ""
+                  className={`px-4 py-2 md:text-4xl font-semibold rounded-md border-2 text-white  border-blue-900 ${
+                    index === activeButton ? "bg-blue-900" : ""
                   }`}
                   onClick={() => setActiveButton(index)}
                 >
