@@ -2,10 +2,11 @@ import React from "react";
 import FeatureCard from "./FeatureCard";
 import Bar from "../simpleAnimationElement/Bar";
 import Element from "../simpleAnimationElement/Element";
+import ServiceModal from "../ServicePreview/ServiceModal";
 
 function Feature() {
   return (
-    <div className="w-full pb-20 relative ">
+    <div className="w-full pb-20 relative">
       <div className="text-lg text-white">
         <h1 className="text-5xl mb-10 text-center">Our services</h1>
       </div>

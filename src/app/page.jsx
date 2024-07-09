@@ -10,6 +10,7 @@ import BookCall from "@/components/bookcall/BookCall.jsx";
 import Loader from "@/components/loader/Loader.jsx";
 import Bar from "@/components/simpleAnimationElement/Bar.jsx";
 import Feature from "@/components/feature/Feature.jsx";
+import ServiceModal from "@/components/ServicePreview/ServiceModal.jsx";
 
 export default function Home() {
   useEffect(() => {
@@ -26,10 +27,13 @@ export default function Home() {
       <div className="body ">
         <Header />
         <Projectpage />
+
         <Feature />
+
         <Testimonial />
+        {/* <ServiceModal /> */}
       </div>
-      <Loader />
+      {/* <Loader /> */}
     </main>
   );
 }
