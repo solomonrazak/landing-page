@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { VscChromeClose } from "react-icons/vsc";
 
-function ServiceModal() {
+function ServiceModal({closeModal}) {
   const [show, setShow] = useState(true);
   return (
     
@@ -29,7 +29,7 @@ function ServiceModal() {
               {/* SUPER SIMPLE */}
             </p>
             <div className="px-4 text-4xl z-20 absolute right-2 text-white">
-              <button className="py-2" onClick={() => setShow(false)}> <VscChromeClose /></button>
+              <button className="py-2" onClick={closeModal}> <VscChromeClose /></button>
             </div>
           </div>
           <div className="flex flex-row z-20 ">
