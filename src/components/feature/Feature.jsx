@@ -1,4 +1,3 @@
-
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -9,7 +8,7 @@ import ServiceModal from "../ServicePreview/ServiceModal";
 function Feature() {
   const [showWeb, setShowWeb] = useState(false);
   const [isClient, setIsClient] = useState(false);
-  const [scrollPosition, setScrollPosition] = useState(0);
+
   const [initialScrollPosition, setInitialScrollPosition] = useState(0);
 
   useEffect(() => {
@@ -18,13 +17,13 @@ function Feature() {
 
   const closeModal = () => {
     setShowWeb(false);
-    document.body.style.overflow = '' // to reverse scroll effect when modal is closed.
+    document.body.style.overflow = ""; // to reverse scroll effect when modal is closed.
   };
- // scroll effect
+  // scroll effect
   useEffect(() => {
     const handleScroll = () => {
       if (showWeb) {
-        const maxScrollDistance = 300; 
+        const maxScrollDistance = 300;
         const currentScrollPosition = window.scrollY;
         const minScrollPosition = initialScrollPosition - maxScrollDistance;
         const maxScrollPosition = initialScrollPosition + maxScrollDistance;
@@ -39,11 +38,9 @@ function Feature() {
 
     window.addEventListener("scroll", handleScroll);
 
-   
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
-      document.body.style.overflow = '';
+      document.body.style.overflow = "";
     };
   }, [showWeb, initialScrollPosition]);
 
@@ -52,8 +49,6 @@ function Feature() {
       setInitialScrollPosition(window.scrollY);
     }
   }, [showWeb]);
-
-  // scroll effect
 
   return (
     <div className="w-full pb-20 relative">
@@ -110,4 +105,3 @@ function Feature() {
 }
 
 export default Feature;
-
